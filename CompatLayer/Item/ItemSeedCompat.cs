@@ -22,9 +22,11 @@ public class ItemSeedCompat : ItemPlantableSeed
         
         if (be is BlockEntityFarmland)
         {
+            // decide if we should continue based on if it can be planted here
             if (!Attributes["isCrop"].AsBool()) return;
 
-            Block cropBlock = byEntity.World.GetBlock(CodeWithPath("crop-" + itemslot.Itemstack.Collectible.Variant["type"] + "-1"));
+            // so far wildcraft herbs is the only mod to implement crops growing on farmland. would have to change variant based on item code
+            Block cropBlock = byEntity.World.GetBlock(AssetLocation.Create(("crop-" + itemslot.Itemstack.Collectible.Variant["herbseedlings"] + "-1"), "wildcraftherb"));
             if (cropBlock == null) return;
 
             if (((BlockEntityFarmland)be).TryPlant(cropBlock, itemslot, byEntity, blockSel))
@@ -45,6 +47,7 @@ public class ItemSeedCompat : ItemPlantableSeed
         {
             if (Attributes["isCrop"].AsBool()) return;
             
+            // find correct variant based on what kind of seed it is
             Block plantBlock = api.World.GetBlock((AssetLocation.Create(
                 (Attributes["isHerb"].AsBool() ? ("seedling-" + Variant["herbseedlings"] + "-planted") : ("groundberryseedling-" + Variant["type"] + "-planted")),
                 (Attributes["isHerb"].AsBool() ? "wildcraftherb" : "wildcraftfruit")
@@ -91,7 +94,7 @@ public class ItemSeedCompat : ItemPlantableSeed
         
         if(Attributes["isCrop"].AsBool())
         {
-            Block cropBlock = world.GetBlock(CodeWithPath("crop-" + inSlot.Itemstack.Collectible.Variant[(Attributes["isHerb"].AsBool() ? "herbseedlings" : "type")] + "-1"));
+            Block cropBlock = world.GetBlock(AssetLocation.Create(("crop-" + inSlot.Itemstack.Collectible.Variant[(Attributes["isHerb"].AsBool() ? "herbseedlings" : "type")] + "-1"),"wildcraftherb"));
             if (cropBlock == null || cropBlock.CropProps == null) return;
 
             dsc.AppendLine(Lang.Get("soil-nutrition-requirement") + cropBlock.CropProps.RequiredNutrient);
@@ -109,15 +112,19 @@ public class ItemSeedCompat : ItemPlantableSeed
 
             totalDays /= api.World.Config.GetDecimal("cropGrowthRateMul", 1);
 
+            // if crop
             dsc.AppendLine(Lang.Get("soil-growth-time") + " " + Lang.Get("count-days", Math.Round(totalDays, 1)));
             dsc.AppendLine(Lang.Get("crop-coldresistance", Math.Round(cropBlock.CropProps.ColdDamageBelow, 1)));
             dsc.AppendLine(Lang.Get("crop-heatresistance", Math.Round(cropBlock.CropProps.HeatDamageAbove, 1)));
             dsc.AppendLine(Lang.Get("plantable-on-farmland-or-soil"));
+            
+            // if crop and waterplant
             if (Attributes["waterplant"].AsBool()) dsc.AppendLine(Lang.Get("plantable-in-water-or-land"));
             return;
         }
         if (Attributes["waterplant"].AsBool())
         {
+            // if not crop but is waterplant
             dsc.AppendLine(Lang.Get("plantable-in-water-or-land"));
             return;
         }

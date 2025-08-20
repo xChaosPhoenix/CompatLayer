@@ -8,7 +8,7 @@
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
     {
-        "file": "wildcrafttrees:itemtypes/poultice.json",
+        "file": "wildcrafttree:itemtypes/poultice.json",
         "op": "add",
         "path": "/enabled",
         "value": "false",

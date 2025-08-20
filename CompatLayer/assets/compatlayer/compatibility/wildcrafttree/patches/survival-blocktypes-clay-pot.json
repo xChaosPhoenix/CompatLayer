@@ -1,0 +1,30 @@
+[
+    {
+        "op": "add",
+        "path": "/attributesByType/claypot-blue-cooked/textureMapping/glueportion-latex-hot",
+        "value": [ "liquid", "latex" ],
+        "file": "game:blocktypes/clay/fired/pot.json",
+        "side": "server"
+    },
+    {
+        "op": "add",
+        "path": "/textures/glueportion-latex-hot",
+        "value": { "base": "wildcrafttree:block/liquid/latex" },
+        "file": "game:blocktypes/clay/fired/pot.json",
+        "side": "server"
+    },
+    {
+        "op": "add",
+        "path": "/attributesByType/claypot-blue-cooked/textureMapping/glueportion-latex-cold",
+        "value": [ "liquid", "latex" ],
+        "file": "game:blocktypes/clay/fired/pot.json",
+        "side": "server"
+    },
+    {
+        "op": "add",
+        "path": "/textures/glueportion-latex-cold",
+        "value": { "base": "wildcrafttree:block/liquid/latex" },
+        "file": "game:blocktypes/clay/fired/pot.json",
+        "side": "server"
+    }
+]

@@ -1,0 +1,18 @@
+﻿[
+    {
+        "file": "wildcraftherb:recipes/grid/herbseeds.json",
+        "op": "replace",
+        "path": "/0/output/code",
+        "value": "compatlayer:herbseed-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/herbseeds.json",
+        "op": "replace",
+        "path": "/1/output/code",
+        "value": "compatlayer:herbseed-skunkcabbage",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    }
+]

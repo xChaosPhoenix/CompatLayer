@@ -1,0 +1,4 @@
+﻿[
+    //{ "file": "alchemy:recipes/clayforming/herbhookmold.json", "op": "replace", "path": "/output/code", "value": "alchemy:herbrackmold-{type}-raw-herbrackhook", "side": "server", "dependsOn": [{ "modid": "alchemy" }] },
+    //{ "file": "alchemy:recipes/clayforming/herbracktopmold.json", "op": "replace", "path": "/output/code", "value": "alchemy:herbrackmold-{type}-raw-herbracktop", "side": "server", "dependsOn": [{ "modid": "alchemy" }] }
+]

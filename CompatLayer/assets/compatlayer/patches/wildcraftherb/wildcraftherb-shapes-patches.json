@@ -1,0 +1,58 @@
+﻿[
+    {
+        "file": "wildcraftherb:shapes/block/food/marshmallow_root.json",
+        "op": "replace",
+        "path": "/textures/root",
+        "value": "wildcraftherb:block/plant/leafygroundvegetable/root",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:shapes/block/food/burdock_root.json",
+        "op": "replace",
+        "path": "/textures/root",
+        "value": "wildcraftherb:block/food/roots/root",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:shapes/block/food/chicory_root.json",
+        "op": "replace",
+        "path": "/textures/root",
+        "value": "wildcraftherb:block/plant/leafygroundvegetable/root",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:shapes/block/food/liquorice.json",
+        "op": "replace",
+        "path": "/textures/liquorice_root",
+        "value": "wildcraftherb:block/food/roots/liquorice_root",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:shapes/block/food/waterchestnut.json",
+        "op": "replace",
+        "path": "/textures/waterchestnut_bulb",
+        "value": "wildcraftherb:block/food/roots/waterchestnut_bulb",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:shapes/block/food/peeledwaterchestnut.json",
+        "op": "replace",
+        "path": "/textures/waterchestnut_bulb_peeled",
+        "value": "wildcraftherb:block/food/roots/waterchestnut_bulb_peeled",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:shapes/block/food/celery.json",
+        "op": "replace",
+        "path": "/textures/celery",
+        "value": "wildcraftherb:block/food/roots/celery_root",
+        "side": "Client",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    }
+]

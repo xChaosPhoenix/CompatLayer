@@ -1,0 +1,126 @@
+{
+    "enabled": false,
+    "code": "boat",
+    "class": "EntityBoat",
+    "tags": [ "inanimate", "vehicle" ],
+    "weight": 120,
+    "variantgroups": [
+        { "code": "type", "states": [ "raft" ] },
+        { "code": "material", "loadFromProperties": "wildcrafttree:block/wood" }
+    ],
+    "attributes": {
+        "deconstructible": true,
+        "deconstructDropsByType": {
+            "boat-raft-*": [
+                { "type": "block", "code": "wildcrafttree:log-placed-{material}-ud", "quantity": 6 },
+                { "type": "item", "code": "game:rope", "quantity": 1 }
+            ]
+        },
+        "shouldSwivelFromMotion": false,
+        "speedMultiplier": 1,
+        "swimmingOffsetY": 0.45,
+        "requiresPaddlingTool": true,
+        "rightClickPickup": true,
+        "mountAnimations": {
+            "idle": "sitflooridle",
+            "ready": "crudeOarReady",
+            "forwards": "crudeOarForward",
+            "backwards": "crudeOarBackward"
+        }
+    },
+    "hitboxSize": { "x": 2, "y": 0.6, "z": 2 },
+    "behaviorConfigs": {
+        "passivephysicsmultibox": {
+            "collisionBoxes": [
+                { "x1": -0.75, "y1": 0, "z1": 0, "x2": 0.75, "y2": 0.6, "z2": 1.5 },
+                { "x1": -0.75, "y1": 0, "z1": -1.5, "x2": 0.75, "y2": 0.6, "z2": 0 }
+            ],
+            "groundDragFactor": 1,
+            "airDragFallingFactor": 0.5,
+            "gravityFactor": 1
+        },
+        "creaturecarrier": {
+            "seats": [
+                {
+                    "apName": "BackSeatAP",
+                    "controllable": true,
+                    "mountOffset": { "x": 0.05, "z": 0.05 },
+                    "bodyYawLimit": null,
+                    "eyeHeight": 1,
+                    "reverse": true
+                },
+                {
+                    "apName": "FrontSeatAP",
+                    "controllable": true,
+                    "mountRotation": { "y": 180 },
+                    "mountOffset": { "x": 0.95, "z": 0.95 },
+                    "bodyYawLimit": null,
+                    "eyeHeight": 1
+                }
+            ]
+        },
+        "rideableaccessories": {
+            "dropContentsOnDeath": true,
+            "wearableSlots": [
+                {
+                    "code": "Front Seat",
+                    "forCategoryCodes": [ "basket" ],
+                    "attachmentPointCode": "FrontSeatAP",
+                    "stepParentTo": { "": { "elementName": "FrontSeat" } },
+                    "emptyInteractPassThrough": true
+                },
+                {
+                    "code": "Back Seat",
+                    "forCategoryCodes": [ "basket" ],
+                    "attachmentPointCode": "BackSeatAP",
+                    "stepParentTo": { "": { "elementName": "BackSeat" } },
+                    "emptyInteractPassThrough": true
+                },
+                {
+                    "code": "Oar Storage",
+                    "forCategoryCodes": [ "oar" ],
+                    "attachmentPointCode": "OarAP",
+                    "stepParentTo": { "": { "elementName": "OarStorage" } }
+                }
+            ]
+        },
+        "selectionboxes": { "selectionBoxes": [ "FrontSeatAP", "BackSeatAP", "OarAP" ] }
+    },
+    "client": {
+        "size": 1,
+        "renderer": "Shape",
+        "shapeByType": { "*": { "base": "game:entity/nonliving/boat/raft" } },
+        "animations": [
+            { "code": "turnLeft", "animation": "turnLeft", "animationSpeed": 1, "easeInSpeed": 2, "easeOutSpeed": 2 },
+            { "code": "turnRight", "animation": "turnRight", "animationSpeed": 1, "easeInSpeed": 2, "easeOutSpeed": 2 },
+            { "code": "weathervane", "animation": "weathervane", "animationSpeed": 0, "weight": 1, "blendMode": "AddAverage" }
+        ],
+        "texturesByType": {
+            "*": {
+                "material": { "base": "game:block/wood/debarked/{material}" },
+                "oak": { "base": "game:block/wood/debarked/{material}" },
+                "oak1": { "base": "wildcrafttree:block/wood/planks/{material}*" },
+                "birch1": { "base": "wildcrafttree:block/wood/planks/{material}*" },
+                "plainoak": { "base": "game:block/wood/debarked/{material}" }
+            }
+        },
+        "behaviors": [
+            { "code": "repulseagents" },
+            { "code": "passivephysicsmultibox" },
+            { "code": "interpolateposition" },
+            { "code": "selectionboxes" },
+            { "code": "rideableaccessories" },
+            { "code": "creaturecarrier" }
+        ]
+    },
+    "server": {
+        "behaviors": [
+            { "code": "repulseagents" },
+            { "code": "passivephysicsmultibox" },
+            { "code": "selectionboxes" },
+            { "code": "rideableaccessories" },
+            { "code": "creaturecarrier" }
+        ]
+    },
+    "sounds": {}
+}

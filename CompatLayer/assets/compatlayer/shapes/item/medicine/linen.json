@@ -1,0 +1,52 @@
+﻿{
+    "editor": { "allAngles": false, "singleTexture": false },
+    "textureWidth": 16,
+    "textureHeight": 16,
+    "textures": { "material": "game:item/medicine/linen/honey-sulfur", "agent": "game:item/medicine/linen/honey-sulfur" },
+    "elements": [
+        {
+            "name": "poultice",
+            "from": [ 4.5, 0, 5 ],
+            "to": [ 11.5, 1, 11 ],
+            "rotationOrigin": [ 8, 0, 8 ],
+            "faces": {
+                "north": { "texture": "#agent", "uv": [ 8.5, 0, 15.5, 1 ] },
+                "east": { "texture": "#agent", "uv": [ 9.5, 15, 15.5, 16 ] },
+                "south": { "texture": "#agent", "uv": [ 0, 0, 7, 1 ] },
+                "west": { "texture": "#agent", "uv": [ 1, 15, 7, 16 ] },
+                "up": { "texture": "#agent", "uv": [ 8, 1, 15, 7 ], "autoUv": false },
+                "down": { "texture": "#agent", "uv": [ 8.5, 9, 15.5, 15 ] }
+            },
+            "children": [
+                {
+                    "name": "strip",
+                    "from": [ 0.5, 0.5, -2 ],
+                    "to": [ 6.5, 0.5, 8 ],
+                    "rotationOrigin": [ -1, 0.3, 0.5 ],
+                    "faces": {
+                        "north": { "texture": "#material", "uv": [ 0, 0, 6, 0 ], "enabled": false },
+                        "east": { "texture": "#material", "uv": [ 0, 0, 10, 0 ], "enabled": false },
+                        "south": { "texture": "#material", "uv": [ 0, 0, 6, 0 ], "enabled": false },
+                        "west": { "texture": "#material", "uv": [ 0, 0, 10, 0 ], "enabled": false },
+                        "up": { "texture": "#material", "uv": [ 1, 1, 7, 11 ] },
+                        "down": { "texture": "#material", "uv": [ 0, 0, 6, 10 ], "enabled": false, "windMode": [ -1, -1, -1, -1 ] }
+                    }
+                },
+                {
+                    "name": "secondary",
+                    "from": [ 0, 1.1, 0 ],
+                    "to": [ 7, 1.1, 6 ],
+                    "rotationOrigin": [ 0, 1.1, 0 ],
+                    "faces": {
+                        "north": { "texture": "#secondary", "uv": [ 0, 0, 7, 0.5 ], "enabled": false },
+                        "east": { "texture": "#secondary", "uv": [ 0, 0, 6, 0.5 ], "enabled": false },
+                        "south": { "texture": "#secondary", "uv": [ 0, 0, 7, 0.5 ], "enabled": false },
+                        "west": { "texture": "#secondary", "uv": [ 0, 0, 6, 0.5 ], "enabled": false },
+                        "up": { "texture": "#secondary", "uv": [ 8, 1, 15, 7 ], "autoUv": false },
+                        "down": { "texture": "#secondary", "uv": [ 0, 0, 7, 6 ], "enabled": false }
+                    }
+                }
+            ]
+        }
+    ]
+}

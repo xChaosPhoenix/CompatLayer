@@ -1,0 +1,155 @@
+﻿[
+    {
+        "file": "compatlayer:itemtypes/resources/herbseed.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:itemtypes/resources/herbseed.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": "false",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "compatlayer:itemtypes/poultice_herb.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:itemtypes/poultice.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": "false",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "compatlayer:itemtypes/advancedpoultice_herb.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:itemtypes/advancedpoultice.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": "false",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    
+    // Replace fired bowl
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-linen-honey-sulfur-xxx.json",
+        "op": "replace",
+        "path": "/ingredients/B/code",
+        "value": "game:bowl-*-fired",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-reed-honey-sulfur-xxx.json",
+        "op": "replace",
+        "path": "/0/ingredients/B/code",
+        "value": "game:bowl-*-fired",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    
+    
+    // Replace sulfur
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-linen-honey-sulfur-xxx.json",
+        "op": "replace",
+        "path": "/ingredients/S/code",
+        "value": "game:powder-sulfur",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-reed-honey-sulfur-xxx.json",
+        "op": "replace",
+        "path": "/0/ingredients/S/code",
+        "value": "game:powder-sulfur",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+
+    // Poultice linen
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-linen-honey-sulfur-xxx.json",
+        "op": "replace",
+        "path": "/output/code",
+        "value": "compatlayer:advancedpoultice-linen-honey-sulfur-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-linen-horsetail-xxx.json",
+        "op": "replace",
+        "path": "/output/code",
+        "value": "compatlayer:advancedpoultice-linen-horsetail-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-linen-xxx-yyy.json",
+        "op": "replace",
+        "path": "/output/code",
+        "value": "compatlayer:advancedpoultice-linen-{herb_main}-{herb_second}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/simplepoultice-linen-xxx.json",
+        "op": "replace",
+        "path": "/output/code",
+        "value": "compatlayer:poultice-linen-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+
+    // Poultice reed
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-reed-honey-sulfur-xxx.json",
+        "op": "replace",
+        "path": "/0/output/code",
+        "value": "compatlayer:advancedpoultice-reed-honey-sulfur-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poultice-reed-horsetail-xxx.json",
+        "op": "replace",
+        "path": "/0/output/code",
+        "value": "compatlayer:advancedpoultice-reed-horsetail-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/poutice-reed-xxx-yyy.json",
+        "op": "replace",
+        "path": "/0/output/code",
+        "value": "compatlayer:advancedpoultice-reed-{herb_main}-{herb_second}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    },
+    {
+        "file": "wildcraftherb:recipes/grid/poultices/simplepoultice-reed-xxx.json",
+        "op": "replace",
+        "path": "/0/output/code",
+        "value": "compatlayer:poultice-reed-{herb}",
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftherb" } ]
+    }
+]

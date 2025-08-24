@@ -1,0 +1,44 @@
+﻿[
+    {
+        "file": "alchemy:recipes/grid/ingredient/looterbase.json",
+        "op": "add",
+        "path": "/-",
+        "value":
+        {
+            "ingredientPattern": "H,F,T",
+            "ingredients": {
+                "H": { "type": "item", "code": "wildcraftherb:herb-chamomile" },
+                "F": { "type": "block", "code": "game:flower-lupine-blue-*" },
+                "T": { "type": "item", "code": "alchemy:mortarpestle-*", "isTool": true }
+            },
+            "shapeless": true,
+            "width": 1,
+            "height": 3,
+            "output": { "type": "item", "code": "alchemy:potionbase-looter-weak" }
+        },
+        "condition": { "when": "CompatLayer.ConfigAlchemyPatched", "isValue": "true" },
+        "side": "server",
+        "dependsOn": [ { "modid": "alchemy" } ]
+    },
+    {
+        "file": "alchemy:recipes/grid/ingredient/looterbase.json",
+        "op": "add",
+        "path": "/-",
+        "value":
+        {
+            "ingredientPattern": "H,F,T",
+            "ingredients": {
+                "H": { "type": "item", "code": "wildcraftherb:herb-chamomile" },
+                "F": { "type": "block", "code": "game:flower-woad-*" },
+                "T": { "type": "item", "code": "alchemy:mortarpestle-*", "isTool": true }
+            },
+            "shapeless": true,
+            "width": 1,
+            "height": 3,
+            "output": { "type": "item", "code": "alchemy:potionbase-looter-weak" }
+        },
+        "condition": { "when": "CompatLayer.ConfigAlchemyPatched", "isValue": "true" },
+        "side": "server",
+        "dependsOn": [ { "modid": "alchemy" } ]
+    },
+]

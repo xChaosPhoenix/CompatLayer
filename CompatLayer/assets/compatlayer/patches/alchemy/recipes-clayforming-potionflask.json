@@ -1,4 +1,0 @@
-﻿[
-  //{ "file": "alchemy:recipes/clayforming/claypotionflask.json", "op": "replace", "path": "/output/code", "value": "alchemy:claypotionflask-{type}-raw", "side": "server", "dependsOn": [{ "modid": "alchemy" }] },
-  //{ "file": "alchemy:recipes/clayforming/claypotionflask4.json", "op": "replace", "path": "/output/code", "value": "alchemy:claypotionflask-{type}-raw", "side": "server", "dependsOn": [{ "modid": "alchemy" }] }
-]

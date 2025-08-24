@@ -1,0 +1,21 @@
+﻿[
+    {
+        "file": "alchemy:recipes/grid/ingredient/cuttings.json",
+        "op": "add",
+        "path": "/-",
+        "value": 
+        {
+            "ingredientPattern": "KF",
+            "ingredients": {
+                "F": { "type": "item", "code": "wildcraftherb:herb-*", "name": "herb", "allowedVariants": ["basil", "chamomile", "cilantro", "lavender", "marjoram", "mint", "saffron", "sage", "thyme"] },
+                "K": { "type": "item", "code": "game:shears-*", "isTool": true }
+            },
+            "width": 2,
+            "height": 1,
+            "output": { "type": "item", "code": "alchemy:cuttings-{herb}-raw" }
+        },
+        "condition": { "when": "CompatLayer.ConfigAlchemyPatched", "isValue": "true" },
+        "side": "server",
+        "dependsOn": [ { "modid": "alchemy" } ]
+    }
+]

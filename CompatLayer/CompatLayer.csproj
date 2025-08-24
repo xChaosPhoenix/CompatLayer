@@ -47,6 +47,26 @@
             <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="Herbarium">
+            <HintPath>../../../ModAPIs/Sources/Herbarium/Herbarium.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Configlib">
+            <HintPath>../../../ModAPIs/Sources/Configlib/configlib.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="ImGui.NET">
+            <HintPath>../../../ModAPIs/Sources/vsimgui/ImGui.NET.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="ImGui.NET">
+            <HintPath>../../../ModAPIs/Sources/vsimgui/VSImGui_DebugTools.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="VSImGui">
+            <HintPath>../../../ModAPIs/Sources/vsimgui/VSImGui.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
     </ItemGroup>
 
     <ItemGroup>

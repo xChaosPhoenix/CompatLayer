@@ -4,6 +4,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -12,6 +13,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -20,6 +22,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -28,6 +31,7 @@
         "op": "add",
         "path": "/enabled",
         "value": "false",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -36,6 +40,7 @@
         "op": "add",
         "path": "/enabled",
         "value": "false",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -44,13 +49,17 @@
         "op": "replace",
         "path": "/shapeByType/boat-raft-*/base",
         "value": "game:entity/nonliving/boat/raft",
-        "side": "server"
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
+        "side": "server",
+        "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
     {
         "file": "wildcrafttree:itemtypes/utility/boat.json",
         "op": "replace",
         "path": "/shapeByType/boat-sailed-*/base",
         "value": "game:entity/nonliving/boat/sailed",
-        "side": "server"
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
+        "side": "server",
+        "dependsOn": [ { "modid": "wildcrafttree" } ]
     }
 ]

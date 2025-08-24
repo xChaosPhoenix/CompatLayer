@@ -4,6 +4,7 @@
         "path": "/enabled",
         "value": "true",
         "file": "compatlayer:blocktypes/wood/woodtyped/path.json",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -55,6 +56,7 @@
             "chlorociboria"
         ],
         "file": "wildcrafttree:recipes/grid/woodenpath.json",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -63,6 +65,7 @@
         "path": "/ingredients/P/name",
         "value": "wood",
         "file": "wildcrafttree:recipes/grid/woodenpath.json",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -71,6 +74,7 @@
         "path": "/ingredients/P/code",
         "value": "wildcrafttree:plank-*",
         "file": "wildcrafttree:recipes/grid/woodenpath.json",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -79,6 +83,7 @@
         "path": "/output/code",
         "value": "compatlayer:woodenpath-{wood}-ns",
         "file": "wildcrafttree:recipes/grid/woodenpath.json",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     }

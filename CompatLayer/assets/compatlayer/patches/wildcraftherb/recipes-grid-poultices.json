@@ -4,6 +4,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -12,6 +13,7 @@
         "op": "add",
         "path": "/enabled",
         "value": "false",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -20,6 +22,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -28,6 +31,7 @@
         "op": "add",
         "path": "/enabled",
         "value": "false",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -36,6 +40,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -44,6 +49,7 @@
         "op": "add",
         "path": "/enabled",
         "value": "false",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -54,6 +60,7 @@
         "op": "replace",
         "path": "/ingredients/B/code",
         "value": "game:bowl-*-fired",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -62,6 +69,7 @@
         "op": "replace",
         "path": "/0/ingredients/B/code",
         "value": "game:bowl-*-fired",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -73,6 +81,7 @@
         "op": "replace",
         "path": "/ingredients/S/code",
         "value": "game:powder-sulfur",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -81,6 +90,7 @@
         "op": "replace",
         "path": "/0/ingredients/S/code",
         "value": "game:powder-sulfur",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -91,6 +101,7 @@
         "op": "replace",
         "path": "/output/code",
         "value": "compatlayer:advancedpoultice-linen-honey-sulfur-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -99,6 +110,7 @@
         "op": "replace",
         "path": "/output/code",
         "value": "compatlayer:advancedpoultice-linen-horsetail-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -107,6 +119,7 @@
         "op": "replace",
         "path": "/output/code",
         "value": "compatlayer:advancedpoultice-linen-{herb_main}-{herb_second}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -115,6 +128,7 @@
         "op": "replace",
         "path": "/output/code",
         "value": "compatlayer:poultice-linen-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -125,6 +139,7 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:advancedpoultice-reed-honey-sulfur-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -133,6 +148,7 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:advancedpoultice-reed-horsetail-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -141,6 +157,7 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:advancedpoultice-reed-{herb_main}-{herb_second}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -149,6 +166,7 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:poultice-reed-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     }

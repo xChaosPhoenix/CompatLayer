@@ -4,6 +4,7 @@
         "op": "replace",
         "path": "/enabled",
         "value": "true",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     },
@@ -12,6 +13,7 @@
         "op": "add",
         "path": "/enabled",
         "value": "false",
+        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
         "side": "server",
         "dependsOn": [ { "modid": "wildcrafttree" } ]
     }

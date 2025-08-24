@@ -4,6 +4,7 @@
         "op": "replace",
         "path": "/textures/root",
         "value": "wildcraftherb:block/plant/leafygroundvegetable/root",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -12,6 +13,7 @@
         "op": "replace",
         "path": "/textures/root",
         "value": "wildcraftherb:block/food/roots/root",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -20,6 +22,7 @@
         "op": "replace",
         "path": "/textures/root",
         "value": "wildcraftherb:block/plant/leafygroundvegetable/root",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -28,6 +31,7 @@
         "op": "replace",
         "path": "/textures/liquorice_root",
         "value": "wildcraftherb:block/food/roots/liquorice_root",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -36,6 +40,7 @@
         "op": "replace",
         "path": "/textures/waterchestnut_bulb",
         "value": "wildcraftherb:block/food/roots/waterchestnut_bulb",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -44,6 +49,7 @@
         "op": "replace",
         "path": "/textures/waterchestnut_bulb_peeled",
         "value": "wildcraftherb:block/food/roots/waterchestnut_bulb_peeled",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -52,6 +58,7 @@
         "op": "replace",
         "path": "/textures/celery",
         "value": "wildcraftherb:block/food/roots/celery_root",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Client",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     }

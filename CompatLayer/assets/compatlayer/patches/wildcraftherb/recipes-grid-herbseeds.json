@@ -4,6 +4,7 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:herbseed-{herb}",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     },
@@ -12,6 +13,7 @@
         "op": "replace",
         "path": "/1/output/code",
         "value": "compatlayer:herbseed-skunkcabbage",
+        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "side": "Server",
         "dependsOn": [ { "modid": "wildcraftherb" } ]
     }

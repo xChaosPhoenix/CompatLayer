@@ -4,7 +4,7 @@
   "name": "CompatLayer",
   "side": "universal",
   "authors": [ "ChaosPhoenix" ],
-  "description": "Compatability layer combining multiple mod fixes and features.",
-  "version": "0.0.2",
+  "description": "Compatibility layer combining multiple mod fixes and features.",
+  "version": "0.0.1",
   "dependencies": { "game": "" }
 }

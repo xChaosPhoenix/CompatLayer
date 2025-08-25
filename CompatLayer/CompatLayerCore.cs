@@ -1,10 +1,12 @@
 ﻿global using static CompatLayer.Constants;
 using CompatLayer.Config;
+using CompatLayer.Harmony;
 using CompatLayer.Item;
+using HarmonyLib;
+using herbarium;
 using Vintagestory.API.Client;
 using Vintagestory.API.Server;
 using Vintagestory.API.Common;
-using Vintagestory.Common;
 
 namespace CompatLayer;
 
@@ -14,6 +16,7 @@ public class CompatLayerCore : ModSystem
     public static string Modid { get; private set; }
     public static ICoreAPI Api { get; private set; }
     public static ConfigUniversal ConfigUniversal { get; set; }
+    private static HarmonyLib.Harmony harmony;
     
     public override void StartPre(ICoreAPI api)
     {
@@ -22,12 +25,22 @@ public class CompatLayerCore : ModSystem
         Logger = Mod.Logger;
         Modid = Mod.Info.ModID;
         
+        api.Logger.Notification("CompatLayer loading harmony patches.");
+
+        api.Logger.Notification("CompatLayer harmony patches finished loading.");
+        
         ConfigUniversal = ModConfig.ReadConfig<ConfigUniversal>(api, ConfigUniversalName);
         api.World.Config.SetBool("CompatLayer.ConfigWildcraftTreePatched", ConfigUniversal.ConfigWildcraftTreePatched);
         api.World.Config.SetBool("CompatLayer.ConfigWildcraftHerbPatched", ConfigUniversal.ConfigWildcraftHerbPatched);
         api.World.Config.SetBool("CompatLayer.ConfigWildcraftFruitPatched", ConfigUniversal.ConfigWildcraftFruitPatched);
         api.World.Config.SetBool("CompatLayer.ConfigAlchemyPatched", ConfigUniversal.ConfigAlchemyPatched);
-        
+
+        // TODO: IMPLEMENT CONFIG FOR WHAT HARMONY PATCHES TO ENABLE
+        if (api.ModLoader.IsModEnabled("herbarium"))
+        {
+            harmony = new HarmonyLib.Harmony(Modid);
+            harmony.PatchAll();
+        }
         
         if (api.ModLoader.IsModEnabled("configlib"))
         {
@@ -56,6 +69,7 @@ public class CompatLayerCore : ModSystem
 
     public override void Dispose()
     {
+        harmony.UnpatchAll(Modid);
         Logger = null;
         Modid = null;
         Api = null;

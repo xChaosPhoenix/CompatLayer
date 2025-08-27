@@ -1,168 +1,68 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Emit;
+using CompatLayer.BlockEntity;
+using CompatLayer.Harmony.Patches;
 using HarmonyLib;
 using herbarium;
 using Vintagestory.API.Common;
-using Vintagestory.API.Datastructures;
-using Vintagestory.API.MathTools;
-using Vintagestory.API.Server;
+using Vintagestory.API.Common.Entities;
+using Vintagestory.GameContent;
 
 namespace CompatLayer.Harmony;
 
-public class HerbariumPatches
+[HarmonyPatch(typeof(Herbarium))]
+[HarmonyPatch(nameof(Herbarium.Start))]
+public static class Herbarium_Start
 {
-    [HarmonyTranspiler]
-    [HarmonyPatch(typeof(Herbarium), nameof(Herbarium.Start))]
-    public static IEnumerable<CodeInstruction> Start(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
     {
+        // Create CodeMatcher for Herbarium class Start method
         var codeMatcher = new CodeMatcher(instructions, generator);
-
+        /* CodeMatch and replace BEHerbariumBerryBush class registration with patched version
+         * --------------------------------------------------------------------------------
+         * IL_01fe: ldtoken      herbarium.BEHerbariumBerryBush
+         */
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(BEHerbariumBerryBush)));
+        codeMatcher.ThrowIfInvalid("Invalid code match");
+        codeMatcher.Repeat(matchAction: cm => { cm.SetOperandAndAdvance(typeof(BEHerbariumBerryBushPatched)); });
+        /* CodeMatch and replace BETallBerryBush class registration with patched version
+         * --------------------------------------------------------------------------------
+         * IL_01fe: ldtoken      herbarium.BETallBerryBush
+         */
+        codeMatcher.Start();
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(BETallBerryBush)));
+        codeMatcher.ThrowIfNotMatch("Unable to find Herbarium Tall Berry Bush");
+        codeMatcher.SetOperandAndAdvance(typeof(BETallBerryBushPatched));
+        
+        /* CodeMatch and replace BEGroundBerryPlant class registration with patched version
+         * --------------------------------------------------------------------------------
+         * IL_01fe: ldtoken      herbarium.BEGroundBerryPlant
+         */
+        codeMatcher.Start();
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(BEGroundBerryPlant)));
+        codeMatcher.ThrowIfNotMatch("Unable to find Herbarium Ground Berry Plant");
+        codeMatcher.SetOperandAndAdvance(typeof(BEGroundBerryPlantPatched));
+        
+        /* CodeMatch and replace MelonCropBehavior class registration with patched version
+         * --------------------------------------------------------------------------------
+         * IL_02ae: ldtoken      herbarium.MelonCropBehavior
+         */
+        codeMatcher.Start();
         codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(MelonCropBehavior)));
+        codeMatcher.ThrowIfNotMatch("Unable to find Herbarium Melon crop behavior");
         codeMatcher.SetOperandAndAdvance(typeof(MelonCropBehaviorPatched));
-        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(ItemHerbSeed)));
-        codeMatcher.RemoveInstructions(4);
+        
+        /* CodeMatch and remove ItemHerbSeed class registration from Herbarium ModSystem file
+         * ------------------------------------------------------------------------------------
+         * IL_02eb: ldstr        "ItemHerbSeed"
+         * IL_02f0: ldtoken      herbarium.ItemHerbSeed
+         * IL_02f5: call         class [System.Runtime]System.Type [System.Runtime]System.Type::GetTypeFromHandle(valuetype [System.Runtime]System.RuntimeTypeHandle)
+         * IL_02fa: callvirt     instance void [VintagestoryAPI]Vintagestory.API.Common.ICoreAPICommon::RegisterItemClass(string, class [System.Runtime]System.Type)
+         */
+        //codeMatcher.Start();
+        //codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(ItemHerbSeed)));
+        //codeMatcher.RemoveInstructions(4); // Remove 4 instructions starting with current
         
         return codeMatcher.InstructionEnumeration();
-    }
-}
-
-public static class HerbariumExtensions
-{
-    
-}
-
-public class MelonCropBehaviorPatched : CropBehavior
-{
-    //Minimum stage at which vines can grow
-    private int vineGrowthStage = 3;
-
-    //Stage at which vines will wither
-    private int vineWitherStage = 8;
-
-    //Probability of vine growth once the minimum vine growth stage is reached
-    private float vineGrowthQuantity;
-
-    private AssetLocation vineBlockLocation;
-    NatFloat vineGrowthQuantityGen;
-    string melonBlockCode;
-    string domainCode;
-
-    public MelonCropBehaviorPatched(Block block) : base(block)
-    {
-    }
-
-    public override void Initialize(JsonObject properties)
-    {
-        base.Initialize(properties);
-
-        vineGrowthStage = properties["vineGrowthStage"].AsInt(3);
-        vineWitherStage = properties["vineWitherStage"].AsInt(8);
-        vineGrowthQuantityGen = properties["vineGrowthQuantity"].AsObject<NatFloat>();
-        melonBlockCode = properties["melonBlockCode"].AsString();
-        domainCode = properties["domainCode"].AsString("game");
-
-        vineBlockLocation = new AssetLocation(domainCode + ":" + melonBlockCode + "-vine-1-normal");
-    }
-
-    public override void OnPlanted(ICoreAPI api, ItemSlot itemslot, EntityAgent byEntity, BlockSelection blockSel)
-    {
-        vineGrowthQuantity = vineGrowthQuantityGen.nextFloat(1, api.World.Rand);
-    }
-
-    public override bool TryGrowCrop(ICoreAPI api, IFarmlandBlockEntity farmland, double currentTotalHours,
-        int newGrowthStage, ref EnumHandling handling)
-    {
-        if (vineGrowthQuantity == 0)
-        {
-            vineGrowthQuantity = farmland.CropAttributes.GetFloat("vineGrowthQuantity",
-                vineGrowthQuantityGen.nextFloat(1, api.World.Rand));
-            farmland.CropAttributes.SetFloat("vineGrowthQuantity", vineGrowthQuantity);
-        }
-
-        handling = EnumHandling.PassThrough;
-
-        if (newGrowthStage >= vineGrowthStage)
-        {
-            if (newGrowthStage == vineWitherStage)
-            {
-                bool allWithered = true;
-                foreach (BlockFacing facing in BlockFacing.HORIZONTALS)
-                {
-                    Block block = api.World.BlockAccessor.GetBlock(farmland.Pos.AddCopy(facing).Up());
-                    if (block.Code.PathStartsWith(melonBlockCode + "-vine"))
-                    {
-                        allWithered &= block.LastCodePart() == "withered";
-                    }
-                }
-
-                if (!allWithered)
-                {
-                    handling = EnumHandling.PreventDefault;
-                }
-
-                return false;
-            }
-
-            if (api.World.Rand.NextDouble() < vineGrowthQuantity)
-            {
-                return TrySpawnVine(api, farmland, currentTotalHours);
-            }
-        }
-
-        return false;
-    }
-
-    private bool TrySpawnVine(ICoreAPI api, IFarmlandBlockEntity farmland, double currentTotalHours)
-    {
-        BlockPos motherplantPos = farmland.UpPos;
-        foreach (BlockFacing facing in BlockFacing.HORIZONTALS)
-        {
-            BlockPos candidatePos = motherplantPos.AddCopy(facing);
-            Block block = api.World.BlockAccessor.GetBlock(candidatePos);
-            if (CanReplace(block))
-            {
-                if (CanSupportMelon(api, candidatePos.DownCopy()))
-                {
-                    DoSpawnVine(api, candidatePos, motherplantPos, facing, currentTotalHours);
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
-
-    private void DoSpawnVine(ICoreAPI api, BlockPos vinePos, BlockPos motherplantPos, BlockFacing facing,
-        double currentTotalHours)
-    {
-        Block vineBlock = api.World.GetBlock(vineBlockLocation);
-        api.World.BlockAccessor.SetBlock(vineBlock.BlockId, vinePos);
-
-        if (api.World is IServerWorldAccessor)
-        {
-            BlockEntity be = api.World.BlockAccessor.GetBlockEntity(vinePos);
-            if (be is BlockEntityMelonVine)
-            {
-                ((BlockEntityMelonVine)be).CreatedFromParent(motherplantPos, facing, currentTotalHours);
-            }
-        }
-    }
-
-    private bool CanReplace(Block block)
-    {
-        if (block == null)
-        {
-            return true;
-        }
-
-        return block.Replaceable >= 6000 && !block.Code.GetName().Contains(melonBlockCode);
-    }
-
-    public static bool CanSupportMelon(ICoreAPI api, BlockPos pos)
-    {
-        Block underblock = api.World.BlockAccessor.GetBlock(pos, BlockLayersAccess.Fluid);
-        if (underblock.IsLiquid()) return false;
-        underblock = api.World.BlockAccessor.GetBlock(pos);
-        return underblock.Replaceable <= 5000;
     }
 }

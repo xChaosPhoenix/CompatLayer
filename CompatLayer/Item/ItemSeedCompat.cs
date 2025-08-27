@@ -18,7 +18,7 @@ public class ItemSeedCompat : ItemPlantableSeed
         }
         
         IPlayer byPlayer = (byEntity is EntityPlayer) ? byEntity.World.PlayerByUid(((EntityPlayer)byEntity).PlayerUID) : null;
-        BlockEntity be = byEntity.World.BlockAccessor.GetBlockEntity(blockSel.Position);
+        Vintagestory.API.Common.BlockEntity be = byEntity.World.BlockAccessor.GetBlockEntity(blockSel.Position);
         
         if (be is BlockEntityFarmland)
         {
@@ -116,7 +116,6 @@ public class ItemSeedCompat : ItemPlantableSeed
             dsc.AppendLine(Lang.Get("soil-growth-time") + " " + Lang.Get("count-days", Math.Round(totalDays, 1)));
             dsc.AppendLine(Lang.Get("crop-coldresistance", Math.Round(cropBlock.CropProps.ColdDamageBelow, 1)));
             dsc.AppendLine(Lang.Get("crop-heatresistance", Math.Round(cropBlock.CropProps.HeatDamageAbove, 1)));
-            dsc.AppendLine(Lang.Get("plantable-on-farmland-or-soil"));
             
             // if crop and waterplant
             if (Attributes["waterplant"].AsBool()) dsc.AppendLine(Lang.Get("plantable-in-water-or-land"));

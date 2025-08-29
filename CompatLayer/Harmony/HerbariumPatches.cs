@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 using System.Reflection.Emit;
 using CompatLayer.BlockEntity;
 using CompatLayer.Harmony.Patches;
@@ -62,6 +64,100 @@ public static class Herbarium_Start
         //codeMatcher.Start();
         //codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Ldtoken, typeof(ItemHerbSeed)));
         //codeMatcher.RemoveInstructions(4); // Remove 4 instructions starting with current
+        
+        return codeMatcher.InstructionEnumeration();
+    }
+}
+
+[HarmonyPatch(typeof(ItemClipping))]
+[HarmonyPatch(nameof(ItemClipping.OnHeldInteractStart))]
+public static class Herbarium_ItemClipping_OnHeldInteractStart
+{
+    static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var codeMatcher = new CodeMatcher(instructions, generator);
+        
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Isinst, typeof(BETallBerryBush)));
+        codeMatcher.ThrowIfInvalid("Invalid code match");
+        codeMatcher.Repeat(matchAction: cm => { cm.SetOperandAndAdvance(typeof(BETallBerryBushPatched)); });
+        
+        return codeMatcher.InstructionEnumeration();
+    }
+}
+
+[HarmonyPatch(typeof(BlockClipping))]
+[HarmonyPatch(nameof(BlockClipping.CanPlaceClipping))]
+public static class Herbarium_BlockClipping_CanPlaceClipping
+{
+    static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var codeMatcher = new CodeMatcher(instructions, generator);
+        
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Isinst, typeof(BETallBerryBush)));
+        codeMatcher.SetOperandAndAdvance(typeof(BETallBerryBushPatched));
+        
+        return codeMatcher.InstructionEnumeration();
+    }
+}
+
+[HarmonyPatch(typeof(HerbariumBerryBush))]
+[HarmonyPatch(nameof(HerbariumBerryBush.OnBlockInteractStart))]
+public static class Herbarium_HerbariumBerryBush_OnBlockInteractStart
+{
+    static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var codeMatcher = new CodeMatcher(instructions, generator);
+        
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Isinst, typeof(BEHerbariumBerryBush)));
+        codeMatcher.ThrowIfInvalid("Invalid code match");
+        codeMatcher.SetOperandAndAdvance(typeof(BEHerbariumBerryBushPatched));
+        
+        codeMatcher.Start();
+        codeMatcher.MatchStartForward(new CodeMatch(CodeInstruction.LoadField(typeof(BEHerbariumBerryBush), nameof(BEHerbariumBerryBush.Pruned))));
+        codeMatcher.ThrowIfNotMatch("Code not matched");
+        codeMatcher.SetInstruction(CodeInstruction.LoadField(typeof(BEHerbariumBerryBushPatched), nameof(BEHerbariumBerryBushPatched.Pruned)));
+        
+        return codeMatcher.InstructionEnumeration();
+    }
+}
+
+[HarmonyPatch(typeof(HerbariumBerryBush))]
+[HarmonyPatch(nameof(HerbariumBerryBush.OnBlockInteractStep))]
+public static class Herbarium_HerbariumBerryBush_OnBlockInteractStep
+{
+    static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var codeMatcher = new CodeMatcher(instructions, generator);
+        
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Isinst, typeof(BEHerbariumBerryBush)));
+        codeMatcher.ThrowIfInvalid("Invalid code match");
+        codeMatcher.SetOperandAndAdvance(typeof(BEHerbariumBerryBushPatched));
+        
+        codeMatcher.Start();
+        codeMatcher.MatchStartForward(new CodeMatch(CodeInstruction.LoadField(typeof(BEHerbariumBerryBush), nameof(BEHerbariumBerryBush.Pruned))));
+        codeMatcher.ThrowIfNotMatch("Code not matched");
+        codeMatcher.SetInstruction(CodeInstruction.LoadField(typeof(BEHerbariumBerryBushPatched), nameof(BEHerbariumBerryBushPatched.Pruned)));
+        
+        return codeMatcher.InstructionEnumeration();
+    }
+}
+
+[HarmonyPatch(typeof(HerbariumBerryBush))]
+[HarmonyPatch(nameof(HerbariumBerryBush.OnBlockInteractStop))]
+public static class Herbarium_HerbariumBerryBush_OnBlockInteractStop
+{
+    static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var codeMatcher = new CodeMatcher(instructions, generator);
+        
+        codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Isinst, typeof(BEHerbariumBerryBush)));
+        codeMatcher.ThrowIfInvalid("Invalid code match");
+        codeMatcher.SetOperandAndAdvance(typeof(BEHerbariumBerryBushPatched));
+        
+        codeMatcher.Start();
+        codeMatcher.MatchStartForward(new CodeMatch(CodeInstruction.LoadField(typeof(BEHerbariumBerryBush), nameof(BEHerbariumBerryBush.Pruned))));
+        codeMatcher.ThrowIfNotMatch("Code not matched");
+        codeMatcher.SetInstruction(CodeInstruction.LoadField(typeof(BEHerbariumBerryBushPatched), nameof(BEHerbariumBerryBushPatched.Pruned)));
         
         return codeMatcher.InstructionEnumeration();
     }

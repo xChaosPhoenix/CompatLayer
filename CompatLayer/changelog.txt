@@ -1,3 +1,6 @@
+v0.0.4 Changelog
+ - Fixed trader buying/selling item errors
+
 v0.0.3 Changelog
 
 Known issues

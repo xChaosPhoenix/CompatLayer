@@ -1,0 +1,191 @@
+﻿[
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/66/code",
+        "value": "compatlayer:seeds-greenstrawberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/67/code",
+        "value": "compatlayer:seeds-strawberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/68/code",
+        "value": "compatlayer:seeds-bunchberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/69/code",
+        "value": "compatlayer:seeds-crowberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/70/code",
+        "value": "compatlayer:seeds-lingonberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/71/code",
+        "value": "compatlayer:seeds-knyazberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/72/code",
+        "value": "compatlayer:seeds-crowseye",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/73/code",
+        "value": "compatlayer:seeds-falsestrawberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/74/code",
+        "value": "compatlayer:seeds-coralbead",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/75/code",
+        "value": "compatlayer:seeds-gardenstrawberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/76/code",
+        "value": "compatlayer:seeds-cloudberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/77/code",
+        "value": "compatlayer:seeds-creepingpine",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/78/code",
+        "value": "compatlayer:seeds-kakaha",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/79/code",
+        "value": "compatlayer:seeds-honeypots",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/80/code",
+        "value": "compatlayer:seeds-cheeseberry",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/81/code",
+        "value": "compatlayer:seeds-pineheath",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/82/code",
+        "value": "compatlayer:seeds-rubysaltbush",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Replace",
+        "path": "/attributes/tradeProps/selling/list/83/code",
+        "value": "compatlayer:seeds-rubysaltbush",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Add",
+        "path": "/attributes/tradeProps/buying/list/1/code",
+        "value": "game:bowl-blue-fired",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Add",
+        "path": "/attributes/tradeProps/buying/list/10/code",
+        "value": "game:storagevessel-blue-fired",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "game:entities/humanoid/trader-gardening.json",
+        "op": "Add",
+        "path": "/attributes/tradeProps/buying/list/11/code",
+        "value": "game:wateringcan-blue-fired",
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    }
+]

@@ -1,0 +1,11 @@
+﻿[
+    {
+        "file": "wildcraftfruit:itemtypes/food/fruit.json",
+        "op": "Replace",
+        "path": "/attributes/handbook",
+        "value": {},
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    }
+]

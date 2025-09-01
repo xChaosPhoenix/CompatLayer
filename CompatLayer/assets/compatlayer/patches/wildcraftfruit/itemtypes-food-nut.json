@@ -1,0 +1,161 @@
+﻿[
+    {
+        "file": "wildcraftfruit:itemtypes/food/nut.json",
+        "op": "Replace",
+        "path": "/attributesByType",
+        "value": {},
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    },
+    {
+        "file": "wildcraftfruit:itemtypes/food/nut.json",
+        "op": "Add",
+        "path": "/attributes",
+        "value": {
+            "foodTags": ["{nut}"],
+            "inContainerTexture": {
+                "baseByType": {
+                    "*-peanutbar": "game:block/food/pie/fill-peanut",
+                    "*-apricotbar": "wildcraftfruit:block/food/pie/fill-apricotpit",
+                    "*-hackberrybar": "wildcraftfruit:block/food/pie/fill-hackberrypit",
+                    "*-pinenutbar": "wildcraftfruit:block/food/pie/fill-pinenut",
+                    "*-dwarfpinebar": "wildcraftfruit:block/food/pie/fill-dwarfpinenut",
+                    "*-cedarbar": "wildcraftfruit:block/food/pie/fill-cedarnut",
+                    "*-sunflowerbar": "wildcraftfruit:block/food/pie/fill-halva",
+                    "*-hazelbar": "wildcraftfruit:block/food/pie/fill-hazelnut",
+                    "*-bearnutbar": "wildcraftfruit:block/food/pie/fill-bearnut",
+                    "*-pistachiobar": "wildcraftfruit:block/food/pie/fill-pistachionut",
+                    "*-cashewbar": "wildcraftfruit:block/food/pie/fill-cashewnut",
+                    "*-bunyabar": "wildcraftfruit:block/food/pie/fill-bunya",
+                    "*-beachalmondbar": "wildcraftfruit:block/food/pie/fill-beachalmond",
+                    "*-saltbushbar": "wildcraftfruit:block/food/pie/fill-oldmansaltbush",
+                    "*-macadamiabar": "wildcraftfruit:block/food/pie/fill-macadamiashelled",
+                    "*-walnutbar": "wildcraftfruit:block/food/pie/fill-walnutshelled",
+                    "*-pandan": "wildcraftfruit:block/food/pie/fill-pandanbits",
+                    "*-marita": "wildcraftfruit:block/food/pie/fill-maritabits",
+                    "*-pinecone": "wildcraftfruit:block/plant/fruittree/stonepine/ripe",
+                    "*-cedarcone": "wildcraftfruit:block/plant/fruittree/cedarpine/ripe",
+                    "*-bunyacone": "wildcraftfruit:block/plant/fruittree/bunya/ripe",
+                    "*-cocoapowder": "wildcraftfruit:block/food/pie/fill-cocoapowder",
+                    "*-pistachioberry": "wildcraftfruit:block/food/pie/fill-turkscap",
+                    "*-juniper": "wildcraftfruit:block/food/pie/fill-juniper",
+                    "*-cookedsoya": "game:block/food/pie/fill-soybean",
+                    "*-bluequandong": "wildcraftfruit:block/food/pie/fill-bluequandong",
+                    "*-halva": "wildcraftfruit:block/food/pie/fill-halva",
+                    "*-sumac": "wildcraftfruit:block/food/pie/fill-sumac",
+                    "*-oldmansaltbush": "wildcraftfruit:block/food/pie/fill-oldmansaltbush",
+                    "*-whitechocolate": "wildcraftfruit:block/food/pie/fill-whitechocolate",
+                    "*-milkchocolate": "wildcraftfruit:block/food/pie/fill-milkchocolate",
+                    "*-nutchocolate": "wildcraftfruit:block/food/pie/fill-nutchocolate",
+                    "*-walnut": "wildcraftfruit:block/food/pie/fill-walnut",
+                    "@*-(almondbar|dwarfpinecone)": "wildcraftfruit:block/food/pie/fill-almond",
+                    "@*-(chestnutbaked|chestnut)": "wildcraftfruit:block/food/pie/fill-chestnut",
+                    "@*-(breadnut|breadnutbaked)": "wildcraftfruit:block/food/pie/fill-breadnut",
+                    "@*-(acornbar|acorn|acornshelled|acornleached)": "wildcraftfruit:block/food/pie/fill-acornleached",
+                    "@*-(almondground|apricotpitground|marzipan)": "wildcraftfruit:block/food/pie/fill-marzipan",
+                    "@*-(peanutground|pacoca)": "wildcraftfruit:block/food/pie/fill-peanutground",
+                    "@*-(macadamia|chocolate)": "wildcraftfruit:block/food/pie/fill-chocolate",
+                    "@*-(cherrybar|cherrypit)": "wildcraftfruit:block/food/pie/fill-cherrypit",
+                    "@*-(hazelnut|apricotpit|beachalmond|cedarnut|bearnut|pistachionut|walnutshelled|pinenut|commonhackberry|sugarhackberry|deserthackberry|cashewnut|macadamiashelled|dwarfpinenut|hackberrypit)": "wildcraftfruit:block/food/pie/fill-{nut}",
+                    "@*-(pumpkinbar|pumpkinseed)": "wildcraftfruit:block/food/pie/fill-pumpkinseed",
+                    "*": "wildcraftfruit:block/food/pie/fill-{nut}"
+                }
+            },
+            "nutritionPropsWhenInMealByType": {
+                "*-pistachioberry": { "satiety": 60, "health": 1, "foodcategory": "Fruit" },
+                "*-cookedsoya": { "satiety": 240, "foodcategory": "Protein" },
+                "*-bluequandong": { "satiety": 60, "foodcategory": "Fruit" },
+                "*-marzipan": { "satiety": 300, "health": 2, "foodcategory": "Fruit" },
+                "*-halva": { "satiety": 300, "health": 2, "foodcategory": "Grain" },
+                "*-pacoca": { "satiety": 300, "health": 2, "foodcategory": "Protein" },
+                "*-chocolate": { "satiety": 180, "health": 3, "foodcategory": "Fruit" },
+                "*-whitechocolate": { "satiety": 260, "health": 1, "foodcategory": "Dairy" },
+                "*-milkchocolate": { "satiety": 280, "health": 1, "foodcategory": "Dairy" },
+                "*-nutchocolate": { satiety: 280, health: 1, foodcategory: "Fruit" },
+                "*-cherrypit": { "satiety": 70, "health": 1, "foodcategory": "Fruit" },
+                "*-sumac": { "satiety": 60, "foodcategory": "Fruit" },
+                "*-pumpkinseed": { "satiety": 90, "foodcategory": "Grain" },
+                "*-oldmansaltbush": { "satiety": 120, "foodcategory": "Grain" },
+                "*-walnut": { "satiety": 120, "foodcategory": "Fruit" },
+                "@*-(chestnutbaked|chestnut)": { "satiety": 160, "foodcategory": "Vegetable" },
+                "@*-(breadnut|breadnutbaked)": { "satiety": 140, "foodcategory": "Vegetable" },
+                "@*-(acornshelled|acornleached)": { "satiety": 240, "foodcategory": "Grain" },
+                "@*-(almondground|peanutground)": { "satiety": 160, "foodcategory": "Protein" },
+                "@*-(apricotpitground|hazelnut|apricotpit|beachalmond|cedarnut)": { "satiety": 120, "foodcategory": "Protein" },
+                "@*-(bearnut|pistachionut)": { "satiety": 100, "foodcategory": "Protein" },
+                "@*-(walnutshelled|pinenut)": { "satiety": 140, "foodcategory": "Protein" },
+                "@*-(commonhackberry|sugarhackberry|deserthackberry)": { "satiety": 90, "foodcategory": "Fruit" },
+                "@*-(dwarfpinenut|hackberrypit)": { "satiety": 90, "foodcategory": "Protein" },
+                "@*-(cashewnut|macadamiashelled)": { "satiety": 160, "foodcategory": "Grain" },
+                "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": null,
+                "@*-(pandan|marita|dwarfpinecone|pinecone|cedarcone|bunyacone|macadamia|cocoapowder|acorn)": null,
+                "*": { "satiety": 160, "foodcategory": "Protein" }
+            },
+            "inPiePropertiesByType": {
+                "*-pacoca": { "texture": "wildcraftfruit:block/food/pie/fill-peanutground", "partType": "Filling", "allowMixing": true },
+                "@*-(juniper|chestnut|breadnut|bluequandong|peanutground|sumac|commonhackberry|sugarhackberry|deserthackberry|walnut|hackberrypit)": { "texture": "wildcraftfruit:block/food/pie/fill-{nut}", "partType": "Filling", "allowMixing": true },
+                "@*-(halva|chocolate|whitechocolate|milkchocolate|nutchocolate|cherrypit|hazelnut|apricotpit|beachalmond|cedarnut|bearnut|pistachionut|walnutshelled|pinenut|dwarfpinenut|acornleached|pumpkinseed|macadamiashelled|cashewnut|oldmansaltbush)": { "texture": "wildcraftfruit:block/food/pie/fill-{nut}", "partType": "Filling", "allowMixing": true },
+                "@*-(almondground|apricotpitground|marzipan)": { "texture": "wildcraftfruit:block/food/pie/fill-marzipan", "partType": "Filling", "allowMixing": true },
+                "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": null,
+                "@*-(pandan|marita|dwarfpinecone|pinecone|cedarcone|bunyacone|macadamia|cocoapowder|acorn)": null,
+                "@*-(pistachioberry|chestnutbaked|cookedsoya|breadnutbaked|acornshelled)": null,
+                "*": { "texture": "wildcraftfruit:block/food/pie/fill-{nut}", "partType": "Filling", "allowMixing": true }
+            },
+            "displaycaseableByType": {
+                "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": true,
+                "@*-(dwarfpinecone|pinecone|cedarcone|bunyacone|marzipan|halva|pacoca|chocolate|whitechocolate|milkchocolate|nutchocolate)": true,
+            },
+            "shelvableByType": {
+                "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": true,
+                "@*-(dwarfpinecone|pinecone|cedarcone|bunyacone|marzipan|halva|pacoca|chocolate|whitechocolate|milkchocolate|nutchocolate)": true,
+            },
+            "onShelfTransformByType": {
+                "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": {
+                    "translation": { "x": 0, "y": 0, "z": -0.02 },
+                    "rotation": { "x": 0, "y": 58, "z": 0 },
+                    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+                    "scale": 0.84
+                },
+                "@*-(whitechocolate|milkchocolate|nutchocolate)": {
+                    "translation": { "x": 0, "y": 0, "z": -0.02 },
+                    "rotation": { "x": 0, "y": 58, "z": 0 },
+                    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+                    "scale": 1
+                },
+                "*-marzipan": {
+                    "translation": { "x": -0.02, "y": 0, "z": 0 },
+                    "rotation": { "x": 0, "y": 50, "z": 0 },
+                    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+                    "scale": 0.72
+                },
+                "*-halva": { "rotation": { "x": 0, "y": -69, "z": 0 }, "origin": { "x": 0.52, "y": 0, "z": 0.52 }, "scale": 0.72 },
+                "*-pacoca": {
+                    "translation": { "x": 0, "y": 0, "z": -0.06 },
+                    "rotation": { "x": 0, "y": 9, "z": 0 },
+                    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+                    "scale": 0.7
+                },
+                "*-chocolate": {
+                    "translation": { "x": 0, "y": 0, "z": -0.02 },
+                    "rotation": { "x": 0, "y": 58, "z": 0 },
+                    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+                    "scale": 1
+                }
+            },
+            "onDisplayTransformByType": {
+                "*-chocolate": { "rotation": { "x": 0, "y": -55, "z": 0 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 1.31 },
+                "@*-(whitechocolate|milkchocolate|nutchocolate)": { "rotation": { "x": 0, "y": -55, "z": 0 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 1.31 }
+            },
+            "groundStorageTransformByType": {
+                "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": { "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.76 },
+                "*-pandan": { "translation": { "x": -0.04, "y": -0.21, "z": 0 }, "origin": { "x": 0.5, "y": 1.5, "z": 0.5 }, "scale": 0.9 },
+                "*-sumac": { "translation": { "x": 0, "y": -0.25, "z": 0 }, "scale": 0.5 },
+                "*": { "translation": { "x": -0.04, "y": -0.21, "z": 0 }, "scale": 0.58 }
+            }
+        },
+        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
+        "side": "Server",
+        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+    }
+]

@@ -4,6 +4,7 @@ using CompatLayer.Item;
 using Vintagestory.API.Client;
 using Vintagestory.API.Server;
 using Vintagestory.API.Common;
+using Vintagestory.GameContent;
 
 namespace CompatLayer;
 

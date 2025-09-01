@@ -1,3 +1,6 @@
+v0.0.5 Changelog
+ - Fixed pie lang issues and reverted to vanilla
+
 v0.0.4 Changelog
  - Fixed trader buying/selling item errors
 

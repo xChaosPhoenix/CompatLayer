@@ -93,10 +93,10 @@
                 "*": { "satiety": 160, "foodcategory": "Protein" }
             },
             "inPiePropertiesByType": {
-                "*-pacoca": { "texture": "wildcraftfruit:block/food/pie/fill-peanutground", "partType": "Filling", "allowMixing": true },
+                "*-pacoca": { "texture": "wildcraftfruit:block/food/pie/fill-peanutground", "partType": "Filling", "allowMixing": false },
                 "@*-(juniper|chestnut|breadnut|bluequandong|peanutground|sumac|commonhackberry|sugarhackberry|deserthackberry|walnut|hackberrypit)": { "texture": "wildcraftfruit:block/food/pie/fill-{nut}", "partType": "Filling", "allowMixing": true },
-                "@*-(halva|chocolate|whitechocolate|milkchocolate|nutchocolate|cherrypit|hazelnut|apricotpit|beachalmond|cedarnut|bearnut|pistachionut|walnutshelled|pinenut|dwarfpinenut|acornleached|pumpkinseed|macadamiashelled|cashewnut|oldmansaltbush)": { "texture": "wildcraftfruit:block/food/pie/fill-{nut}", "partType": "Filling", "allowMixing": true },
-                "@*-(almondground|apricotpitground|marzipan)": { "texture": "wildcraftfruit:block/food/pie/fill-marzipan", "partType": "Filling", "allowMixing": true },
+                "@*-(halva|chocolate|whitechocolate|milkchocolate|nutchocolate|cherrypit|hazelnut|apricotpit|beachalmond|cedarnut|bearnut|pistachionut|walnutshelled|pinenut|dwarfpinenut|acornleached|pumpkinseed|macadamiashelled|cashewnut|oldmansaltbush)": { "texture": "wildcraftfruit:block/food/pie/fill-{nut}", "partType": "Filling", "allowMixing": false },
+                "@*-(almondground|apricotpitground|marzipan)": { "texture": "wildcraftfruit:block/food/pie/fill-marzipan", "partType": "Filling", "allowMixing": false },
                 "@*-(peanutbar|almondbar|apricotbar|hackberrybar|pinenutbar|dwarfpinebar|cherrybar|cedarbar|sunflowerbar|hazelbar|bearnutbar|acornbar|pistachiobar|pumpkinbar|cashewbar|bunyabar|beachalmondbar|saltbushbar|macadamiabar|walnutbar)": null,
                 "@*-(pandan|marita|dwarfpinecone|pinecone|cedarcone|bunyacone|macadamia|cocoapowder|acorn)": null,
                 "@*-(pistachioberry|chestnutbaked|cookedsoya|breadnutbaked|acornshelled)": null,

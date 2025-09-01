@@ -17,7 +17,32 @@
     // Herbarium
     "itemdesc-advancedpoultice-*": "A bandage to heal minor wounds",
     "itemdesc-poultice-*": "A bandage to heal minor wounds",
-    
+
+    // Pie handbook fixes
+    "game:pie-single-soakedsoybean-perfect": "Soaked-soybean pie",
+    "game:pie-single-nut-pinenut-perfect": "Stone pine nut pie",
+    "game:pie-single-nut-chocolate-perfect": "Dark chocolate pie",
+    "game:pie-single-nut-milkchocolate-perfect": "Milk chocolate pie",
+    "game:pie-single-nut-whitechocolate-perfect": "White chocolate pie",
+    "game:pie-single-nut-nutchocolate-perfect": "Nutty chocolate pie",
+    "game:pie-single-nut-pacoca-perfect": "Sweet peanut pie",
+    "game:pie-single-nut-halva-perfect": "Sweet sunflower pie",
+    "game:pie-single-nut-dwarfpinenut-perfect": "Dwarf pine nut pie",
+    "game:pie-single-nut-macadamiashelled-perfect": "Macadamia pie",
+    "game:pie-single-nut-cherrypit-perfect": "Cherry pit pie",
+    "game:pie-single-nut-apricotpit-perfect": "Apricot pit pie",
+    "game:pie-single-nut-acornleached-perfect": "Acorn pie",
+    "game:pie-single-nut-walnutshelled-perfect": "Walnut pie",
+    "game:pie-single-nut-hazelnut-perfect": "Hazelnut pie",
+    "game:pie-single-nut-bearnut-perfect": "Bearnut pie",
+    "game:pie-single-nut-pumpkinseed-perfect": "Pumpkin seed pie",
+    "game:pie-single-nut-beachalmond-perfect": "Beach almond pie",
+    "game:pie-single-nut-cashewnut-perfect": "Cashew pie",
+    "game:pie-single-nut-pistachionut-perfect": "Pistachio pie",
+    "game:pie-single-nut-oldmansaltbush-perfect": "Saltbush seed pie",
+    "game:pie-single-nut-almondground-perfect": "Almond pie",
+    "game:pie-single-nut-apricotpitground-perfect": "Apricot pit pie",
+    "game:pie-single-nut-marzipan-perfect": "Marzipan pie",
     
     // Wildcraft Trees
     "compatlayer:block-woodenpath-ash-ns": "Ash path",
@@ -106,7 +131,6 @@
     "item-seeds-pineheath": "Pine heath seeds",
     "item-seeds-kakaha": "Kakaha seeds",
     "item-seeds-greenstrawberry": "Green strawberry seeds",
-
     
     // Wildcraft Herbs lang
     "item-poultice-reed-stjohnswort": "St John's wort poultice (from reeds)",

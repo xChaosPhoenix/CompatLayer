@@ -650,161 +650,161 @@
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-maritabits", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-maritabits", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-chestnut", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-chestnut", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-chestnutbaked", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-chestnutbaked", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-breadnut", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-breadnut", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-breadnutbaked", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-breadnutbaked", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-cookedsoya", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-cookedsoya", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/4/validStacks/-",
+        "path": "/ingredients/5/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:soakedsoybean", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/5/validStacks/-",
+        "path": "/ingredients/6/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:soakedsoybean", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/7/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-*", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-juniper", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-sumac", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-pistachioberry", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-walnut", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-deserthackberry", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-sugarhackberry", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-commonhackberry", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/meatystew",
         "op": "add",
-        "path": "/ingredients/6/validStacks/-",
+        "path": "/ingredients/8/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:nut-bluequandong", "shapeElement": "bowl/fruit 1/*" },
         "side": "server"
     },
@@ -976,29 +976,29 @@
     },
     {
         "file": "game:recipes/cooking/vegetablestew",
-        "op": "replace",
-        "path": "/ingredients/0/validStacks/10",
+        "op": "add",
+        "path": "/ingredients/0/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-cucumber", "shapeElement": "bowl/vegetable 1/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/vegetablestew",
-        "op": "replace",
-        "path": "/ingredients/1/validStacks/10",
+        "op": "add",
+        "path": "/ingredients/1/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-cucumber", "shapeElement": "bowl/vegetable 2/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/vegetablestew",
-        "op": "replace",
-        "path": "/ingredients/2/validStacks/10",
+        "op": "add",
+        "path": "/ingredients/2/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-cucumber", "shapeElement": "bowl/vegetable 3/*" },
         "side": "server"
     },
     {
         "file": "game:recipes/cooking/vegetablestew",
-        "op": "replace",
-        "path": "/ingredients/3/validStacks/10",
+        "op": "add",
+        "path": "/ingredients/3/validStacks/-",
         "value": { "type": "item", "code": "wildcraftfruit:fruit-cucumber", "shapeElement": "bowl/vegetable 4/*" },
         "side": "server"
     },

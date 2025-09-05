@@ -13,7 +13,7 @@
             "*": false
         },
         "isHerbByType": {
-            "*": true
+            "*": false
         }
     },
     "behaviors": [

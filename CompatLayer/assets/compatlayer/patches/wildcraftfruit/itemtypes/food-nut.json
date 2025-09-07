@@ -4,9 +4,8 @@
         "op": "Replace",
         "path": "/attributesByType",
         "value": {},
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:itemtypes/food/nut.json",
@@ -154,8 +153,7 @@
                 "*": { "translation": { "x": -0.04, "y": -0.21, "z": 0 }, "scale": 0.58 }
             }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     }
 ]

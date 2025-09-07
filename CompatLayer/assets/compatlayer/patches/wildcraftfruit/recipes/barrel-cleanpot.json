@@ -4,17 +4,15 @@
         "op": "replace",
         "path": "/ingredients/1",
         "value": { "type": "block", "code": "game:dirtyclaypot-*-empty", "name": "color", "quantity": "1" },
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/barrel/cleanpot.json",
         "op": "replace",
         "path": "/output",
         "value": { "type": "block", "code": "game:claypot-{color}-fired", "name": "color", "quantity:": "1" },
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     }
 ]

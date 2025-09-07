@@ -30,7 +30,7 @@ public class ConfigLibCompatibility
             if (ImGui.CollapsingHeader(Lang.Get(SettingsPrefix + "wildcrafttree-header") + $"##universal-wildcrafttreeSetting-{id}"))
             {
                 ImGui.Indent();
-                config.ConfigWildcraftTreePatched = OnCheckBox(id, config.ConfigWildcraftTreePatched, nameof(config.ConfigWildcraftTreePatched));
+                ImGui.Text(Lang.Get(SettingsPrefix + "wildcrafttree-info"));
                 ImGui.Unindent();
             }
         }
@@ -41,7 +41,7 @@ public class ConfigLibCompatibility
             if (ImGui.CollapsingHeader(Lang.Get(SettingsPrefix + "wildcraftherb-header") + $"##universal-wildcraftherbSetting-{id}"))
             {
                 ImGui.Indent();
-                config.ConfigWildcraftHerbPatched = OnCheckBox(id, config.ConfigWildcraftHerbPatched, nameof(config.ConfigWildcraftHerbPatched));
+                ImGui.Text(Lang.Get(SettingsPrefix + "wildcraftherb-info"));
                 ImGui.Unindent();
             }
         }
@@ -52,7 +52,7 @@ public class ConfigLibCompatibility
             if (ImGui.CollapsingHeader(Lang.Get(SettingsPrefix + "wildcraftfruit-header") + $"##universal-wildcraftfruitSetting-{id}"))
             {
                 ImGui.Indent();
-                config.ConfigWildcraftFruitPatched = OnCheckBox(id, config.ConfigWildcraftFruitPatched, nameof(config.ConfigWildcraftFruitPatched));
+                ImGui.Text(Lang.Get(SettingsPrefix + "wildcraftfruit-info"));
                 ImGui.Unindent();
             }
         }
@@ -63,7 +63,7 @@ public class ConfigLibCompatibility
             if (ImGui.CollapsingHeader(Lang.Get(SettingsPrefix + "alchemy-header") + $"##universal-alchemySetting-{id}"))
             {
                 ImGui.Indent();
-                config.ConfigAlchemyPatched = OnCheckBox(id, config.ConfigAlchemyPatched, nameof(config.ConfigAlchemyPatched));
+                ImGui.Text(Lang.Get(SettingsPrefix + "alchemy-info"));
                 ImGui.Unindent();
             }
         }

@@ -16,6 +16,18 @@ public class CompatLayerCore : ModSystem
     public static ConfigUniversal ConfigUniversal { get; set; }
     private static HarmonyLib.Harmony harmony;
     
+    /* IMPORTANT
+     * TODO: FIND MISSING TEXTURE ISSUES (VSMODDB COMMENT AKSYL)
+     * TODO: FIX / UPDATE EXPANDED FOODS COMPATABILITY PATCH FOR WILDCRAFT FRUIT
+     *
+     * LESS IMPORTANT
+     * TODO: IMPLEMENT CONFIG FOR WHAT HARMONY PATCHES TO ENABLE
+     * TODO: FIND BETTER SOLUTION TO HERBARIUM PATCHES OTHER THAN USING HARMONY
+     * TODO: VERIFY MEMORY LEAK ISSUE SOLVED
+     */
+    
+    
+    
     public override void StartPre(ICoreAPI api)
     {
         base.StartPre(api);
@@ -24,12 +36,7 @@ public class CompatLayerCore : ModSystem
         Modid = Mod.Info.ModID;
         
         ConfigUniversal = ModConfig.ReadConfig<ConfigUniversal>(api, ConfigUniversalName);
-        api.World.Config.SetBool("CompatLayer.ConfigWildcraftTreePatched", ConfigUniversal.ConfigWildcraftTreePatched);
-        api.World.Config.SetBool("CompatLayer.ConfigWildcraftHerbPatched", ConfigUniversal.ConfigWildcraftHerbPatched);
-        api.World.Config.SetBool("CompatLayer.ConfigWildcraftFruitPatched", ConfigUniversal.ConfigWildcraftFruitPatched);
-        api.World.Config.SetBool("CompatLayer.ConfigAlchemyPatched", ConfigUniversal.ConfigAlchemyPatched);
-
-        // TODO: IMPLEMENT CONFIG FOR WHAT HARMONY PATCHES TO ENABLE
+        
         if (api.Side == EnumAppSide.Server)
         {
             harmony = new HarmonyLib.Harmony(Modid);

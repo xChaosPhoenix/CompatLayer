@@ -4,7 +4,6 @@
         "op": "add",
         "path": "/0/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -13,7 +12,6 @@
         "op": "add",
         "path": "/1/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -22,7 +20,6 @@
         "op": "add",
         "path": "/2/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -43,9 +40,8 @@
             "offsetZ": { "avg": 0, "var": 12 },
             "placement": "NearWater"
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/other.json",
@@ -61,9 +57,8 @@
             "quantity": { "avg": 5, "var": 5 },
             "placement": "NearWater"
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
 
     {
@@ -80,9 +75,8 @@
             "quantity": { "dist": "invexp", "avg": 15, "var": 5 },
             "placement": "NearWater"
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
 
     {
@@ -100,9 +94,8 @@
             "offsetZ": { "avg": 0, "var": 12 },
             "placement": "NearWater"
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/other.json",
@@ -118,8 +111,7 @@
             "quantity": { "avg": 5, "var": 5 },
             "placement": "NearWater"
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     }
 ]

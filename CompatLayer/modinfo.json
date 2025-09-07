@@ -5,6 +5,6 @@
   "side": "universal",
   "authors": [ "ChaosPhoenix" ],
   "description": "Compatibility layer combining multiple mod fixes and features.",
-  "version": "0.0.4",
-  "dependencies": { "game": "1.21.0", "herbarium": "1.4.0" }
+  "version": "0.0.6",
+  "dependencies": { "game": "", "herbarium": "1.4.0" }
 }

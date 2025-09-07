@@ -4,79 +4,71 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:poultice-linen-eucalyptus",
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/1/output/code",
         "value": "compatlayer:poultice-reed-eucalyptus",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/2/output/code",
         "value": "compatlayer:poultice-reed-eucalyptus",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/3/output/code",
         "value": "compatlayer:poultice-linen-eucalyptussap",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/4/output/code",
         "value": "compatlayer:poultice-reed-eucalyptussap",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/5/output/code",
         "value": "compatlayer:poultice-reed-eucalyptussap",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/6/output/code",
         "value": "compatlayer:poultice-linen-latex",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/7/output/code",
         "value": "compatlayer:poultice-reed-latex",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     },
     {
         "file": "wildcrafttree:recipes/grid/eucalyptus_poultice.json",
         "op": "replace",
         "path": "/8/output/code",
         "value": "compatlayer:poultice-reed-latex",
-        "condition": { "when": "CompatLayer.ConfigWildcraftTreePatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
     }
 ]

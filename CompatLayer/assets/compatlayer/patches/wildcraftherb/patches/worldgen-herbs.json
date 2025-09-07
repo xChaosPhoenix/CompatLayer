@@ -4,7 +4,6 @@
         "op": "add",
         "path": "/0/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -13,7 +12,6 @@
         "op": "add",
         "path": "/1/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -22,7 +20,6 @@
         "op": "add",
         "path": "/2/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -31,7 +28,6 @@
         "op": "add",
         "path": "/3/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -40,7 +36,6 @@
         "op": "add",
         "path": "/4/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -49,7 +44,6 @@
         "op": "add",
         "path": "/5/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -58,7 +52,6 @@
         "op": "add",
         "path": "/6/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -67,7 +60,6 @@
         "op": "add",
         "path": "/7/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -76,7 +68,6 @@
         "op": "add",
         "path": "/8/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -85,7 +76,6 @@
         "op": "add",
         "path": "/9/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -94,7 +84,6 @@
         "op": "add",
         "path": "/10/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -103,7 +92,6 @@
         "op": "add",
         "path": "/11/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -112,7 +100,6 @@
         "op": "add",
         "path": "/12/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -121,7 +108,6 @@
         "op": "add",
         "path": "/13/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -130,7 +116,6 @@
         "op": "add",
         "path": "/14/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -139,7 +124,6 @@
         "op": "add",
         "path": "/15/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -148,7 +132,6 @@
         "op": "add",
         "path": "/16/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -157,7 +140,6 @@
         "op": "add",
         "path": "/17/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -166,7 +148,6 @@
         "op": "add",
         "path": "/18/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -175,7 +156,6 @@
         "op": "add",
         "path": "/19/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -184,7 +164,6 @@
         "op": "add",
         "path": "/20/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -193,7 +172,6 @@
         "op": "add",
         "path": "/21/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -202,7 +180,6 @@
         "op": "add",
         "path": "/22/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -211,7 +188,6 @@
         "op": "add",
         "path": "/23/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -220,7 +196,6 @@
         "op": "add",
         "path": "/24/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -229,7 +204,6 @@
         "op": "add",
         "path": "/25/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -238,7 +212,6 @@
         "op": "add",
         "path": "/26/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -247,7 +220,6 @@
         "op": "add",
         "path": "/27/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -256,7 +228,6 @@
         "op": "add",
         "path": "/28/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -265,7 +236,6 @@
         "op": "add",
         "path": "/29/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -274,7 +244,6 @@
         "op": "add",
         "path": "/30/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -283,7 +252,6 @@
         "op": "add",
         "path": "/31/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -292,7 +260,6 @@
         "op": "add",
         "path": "/32/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -301,7 +268,6 @@
         "op": "add",
         "path": "/33/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -310,7 +276,6 @@
         "op": "add",
         "path": "/34/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -319,7 +284,6 @@
         "op": "add",
         "path": "/35/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -328,7 +292,6 @@
         "op": "add",
         "path": "/36/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -337,7 +300,6 @@
         "op": "add",
         "path": "/37/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -346,7 +308,6 @@
         "op": "add",
         "path": "/38/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -355,7 +316,6 @@
         "op": "add",
         "path": "/39/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -364,7 +324,6 @@
         "op": "add",
         "path": "/40/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -373,7 +332,6 @@
         "op": "add",
         "path": "/41/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -382,7 +340,6 @@
         "op": "add",
         "path": "/42/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -391,7 +348,6 @@
         "op": "add",
         "path": "/43/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -400,7 +356,6 @@
         "op": "add",
         "path": "/44/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -409,7 +364,6 @@
         "op": "add",
         "path": "/45/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -418,7 +372,6 @@
         "op": "add",
         "path": "/46/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -427,7 +380,6 @@
         "op": "add",
         "path": "/47/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -436,7 +388,6 @@
         "op": "add",
         "path": "/48/enabled",
         "value": false,
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
         "side": "server"
     },
@@ -459,9 +410,8 @@
             "maxY": 1.22,
             "quantity": { "dist": "stronginvexp", "avg": 120, "var": 50 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -479,9 +429,8 @@
             "maxY": 1.82,
             "quantity": { "dist": "stronginvexp", "avg": 120, "var": 50 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -501,9 +450,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "stronginvexp", "avg": 3, "var": 10 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -522,9 +470,8 @@
             "maxForest": 1,
             "quantity": { "dist": "stronginvexp", "avg": 20, "var": 5 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -543,9 +490,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "stronginvexp", "avg": 8, "var": 5 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -566,9 +512,8 @@
             "placement": "NearWater",
             "quantity": { "dist": "stronginvexp", "avg": 3, "var": 10 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -588,9 +533,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -609,9 +553,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 12, "var": 24 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -631,9 +574,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -653,9 +595,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 2, "var": 1 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -675,9 +616,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -698,9 +638,8 @@
             "placement": "NearWater",
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -720,9 +659,8 @@
             "placement": "NearWater",
             "quantity": { "avg": 25, "var": 5 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -743,9 +681,8 @@
             "placement": "NearWater",
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -765,9 +702,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -786,9 +722,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -806,9 +741,8 @@
             "maxY": 0.72,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -826,9 +760,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -846,9 +779,8 @@
             "maxY": 0.72,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -865,9 +797,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -885,9 +816,8 @@
             "placement": "NearWater",
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -905,9 +835,8 @@
             "placement": "OnSurfacePlusUnderTrees",
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -924,9 +853,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -941,9 +869,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -959,9 +886,8 @@
             "maxY": 0.72,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -979,9 +905,8 @@
             "maxY": 0.72,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1001,9 +926,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1023,9 +947,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1045,9 +968,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1066,9 +988,8 @@
             "offsetX": { "dist": "gaussian", "avg": 0, "var": 12 },
             "offsetZ": { "dist": "gaussian", "avg": 0, "var": 12 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1088,9 +1009,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1110,9 +1030,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1132,9 +1051,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1154,9 +1072,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1176,9 +1093,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1198,9 +1114,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1220,9 +1135,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1242,9 +1156,8 @@
             "maxY": 0.62,
             "quantity": { "avg": 4, "var": 8 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1262,9 +1175,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp","avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1284,9 +1196,8 @@
             "offsetX": { "dist": "gaussian", "avg": 0, "var": 24 },
             "offsetZ": { "dist": "gaussian", "avg": 0, "var": 24 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1307,9 +1218,8 @@
             "offsetX": { "dist": "gaussian", "avg": 0, "var": 6 },
             "offsetZ": { "dist": "gaussian", "avg": 0, "var": 6 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1327,9 +1237,8 @@
             "maxY": 0.32,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1347,9 +1256,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1365,9 +1273,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1384,9 +1291,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 4, "var": 5 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1403,9 +1309,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1423,9 +1328,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1443,9 +1347,8 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     },
     {
         "file": "game:worldgen/blockpatches/flower.json",
@@ -1463,8 +1366,7 @@
             "maxY": 0.62,
             "quantity": { "dist": "invexp", "avg": 8, "var": 15 }
         },
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
         "dependsOn": [ { "modid": "wildcraftherb" } ],
-        "side": "Server"
+        "side": "server"
     }
 ]

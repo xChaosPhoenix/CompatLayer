@@ -3,9 +3,8 @@
         "file": "wildcraftfruit:recipes/grid/berryseeds.json",
         "op": "replace",
         "path": "/0/output/code",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
         "value": "compatlayer:seeds-{berry}",
-        "side": "server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     }
 ]

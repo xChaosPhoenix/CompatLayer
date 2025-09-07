@@ -1,0 +1,18 @@
+﻿[
+    {
+        "file": "compatlayer:itemtypes/poultice_tree.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcrafttree:itemtypes/poultice.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": "false",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    }
+]

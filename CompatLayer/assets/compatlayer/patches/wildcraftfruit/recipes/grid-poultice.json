@@ -3,64 +3,57 @@
         "file": "compatlayer:itemtypes/resources/seeds.json",
         "op": "replace",
         "path": "/enabled",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
         "value": "true",
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:itemtypes/resources/seeds.json",
         "op": "add",
         "path": "/enabled",
         "value": "false",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "compatlayer:itemtypes/poultice_fruit.json",
         "op": "replace",
         "path": "/enabled",
         "value": "true",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:itemtypes/poultice.json",
         "op": "add",
         "path": "/enabled",
         "value": "false",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/6/ingredients/B/code",
         "value": "game:bowl-*-fired",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/7/ingredients/B/code",
         "value": "game:bowl-*-fired",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/8/ingredients/B/code",
         "value": "game:bowl-*-fired",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     
     // Output poultice remap
@@ -69,27 +62,24 @@
         "op": "replace",
         "path": "/0/output/code",
         "value": "compatlayer:poultice-linen-falseorange",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/1/output/code",
         "value": "compatlayer:poultice-reed-falseorange",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/2/output/code",
         "value": "compatlayer:poultice-reed-falseorange",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -97,27 +87,24 @@
         "op": "replace",
         "path": "/3/output/code",
         "value": "compatlayer:poultice-linen-snowberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/4/output/code",
         "value": "compatlayer:poultice-reed-snowberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/5/output/code",
         "value": "compatlayer:poultice-reed-snowberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -125,27 +112,24 @@
         "op": "replace",
         "path": "/6/output/code",
         "value": "compatlayer:poultice-linen-ivy-vinegar",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/7/output/code",
         "value": "compatlayer:poultice-reed-ivy-vinegar",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/8/output/code",
         "value": "compatlayer:poultice-reed-ivy-vinegar",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -153,27 +137,24 @@
         "op": "replace",
         "path": "/9/output/code",
         "value": "compatlayer:poultice-linen-resin-elder",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/10/output/code",
         "value": "compatlayer:poultice-reed-resin-elder",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/11/output/code",
         "value": "compatlayer:poultice-reed-resin-elder",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -181,27 +162,24 @@
         "op": "replace",
         "path": "/12/output/code",
         "value": "compatlayer:poultice-linen-bryony",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/13/output/code",
         "value": "compatlayer:poultice-reed-bryony",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/14/output/code",
         "value": "compatlayer:poultice-reed-bryony",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -209,27 +187,24 @@
         "op": "replace",
         "path": "/15/output/code",
         "value": "compatlayer:poultice-linen-baneberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/16/output/code",
         "value": "compatlayer:poultice-reed-baneberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/17/output/code",
         "value": "compatlayer:poultice-reed-baneberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -237,27 +212,24 @@
         "op": "replace",
         "path": "/18/output/code",
         "value": "compatlayer:poultice-linen-bearberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/19/output/code",
         "value": "compatlayer:poultice-reed-bearberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/20/output/code",
         "value": "compatlayer:poultice-reed-bearberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 
     {
@@ -265,27 +237,24 @@
         "op": "replace",
         "path": "/21/output/code",
         "value": "compatlayer:poultice-linen-bearberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/22/output/code",
         "value": "compatlayer:poultice-reed-bearberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftfruit:recipes/grid/poultice.json",
         "op": "replace",
         "path": "/23/output/code",
         "value": "compatlayer:poultice-reed-bearberry",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     }
     
     

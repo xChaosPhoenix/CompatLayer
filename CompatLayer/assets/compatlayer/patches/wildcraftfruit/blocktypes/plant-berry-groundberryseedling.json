@@ -4,8 +4,7 @@
         "op": "replace",
         "path": "/dropsByType/*-planted/0/code",
         "value": "compatlayer:seeds-{type}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftFruitPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftfruit" } ]
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "server"
     },
 ]

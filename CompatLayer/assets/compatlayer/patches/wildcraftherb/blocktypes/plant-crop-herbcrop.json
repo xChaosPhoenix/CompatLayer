@@ -4,98 +4,87 @@
         "op": "replace",
         "path": "/dropsByType/*-bearleek-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-marshmallow-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-chicory-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-liquorice-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-celery-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-burnet-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-ginger-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-ginseng-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-3/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*-2/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     },
     {
         "file": "wildcraftherb:blocktypes/plant/crop/herbcrop.json",
         "op": "replace",
         "path": "/dropsByType/*/0/code",
         "value": "compatlayer:herbseed-{herbcrops}",
-        "condition": { "when": "CompatLayer.ConfigWildcraftHerbPatched", "isValue": "true" },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcraftherb" } ]
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
     }
 ]

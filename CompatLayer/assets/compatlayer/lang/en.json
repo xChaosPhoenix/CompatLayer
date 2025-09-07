@@ -2,17 +2,17 @@
     // Configlib
     "setting-compatlayer-universal": "CompatLayer",
 
-    "setting-wildcrafttree-header": "Wildcraft trees found",
-    "setting-ConfigWildcraftTreePatched": "Load patch",
+    "setting-wildcrafttree-header": "Wildcraft: Trees and Shrubs",
+    "setting-wildcrafttree-info": "No issues found",
     
-    "setting-wildcraftherb-header": "Wildcraft herbs found",
-    "setting-ConfigWildcraftHerbPatched": "Load patch",
+    "setting-wildcraftherb-header": "Wildcraft: Herbs and Spices",
+    "setting-wildcraftherb-info": "No issues found",
     
-    "setting-wildcraftfruit-header": "Wildcraft fruit found",
-    "setting-ConfigWildcraftFruitPatched": "Load patch",
+    "setting-wildcraftfruit-header": "Wildcraft: Fruits and Nuts",
+    "setting-wildcraftfruit-info": "No issues found",
     
-    "setting-alchemy-header": "Alchemy found",
-    "setting-ConfigAlchemyPatched": "Load patch",
+    "setting-alchemy-header": "Alchemy",
+    "setting-alchemy-info": "No issues found",
     
     // Herbarium
     "itemdesc-advancedpoultice-*": "A bandage to heal minor wounds",

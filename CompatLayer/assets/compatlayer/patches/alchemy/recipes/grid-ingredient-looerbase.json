@@ -37,8 +37,7 @@
             "height": 3,
             "output": { "type": "item", "code": "alchemy:potionbase-looter-weak" }
         },
-        "condition": { "when": "CompatLayer.ConfigAlchemyPatched", "isValue": "true" },
-        "side": "server",
-        "dependsOn": [ { "modid": "alchemy" } ]
+        "dependsOn": [ { "modid": "alchemy" } ],
+        "side": "server"
     },
 ]

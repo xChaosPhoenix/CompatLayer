@@ -14,8 +14,7 @@
             "height": 1,
             "output": { "type": "item", "code": "alchemy:cuttings-{herb}-raw" }
         },
-        "condition": { "when": "CompatLayer.ConfigAlchemyPatched", "isValue": "true" },
-        "side": "server",
-        "dependsOn": [ { "modid": "alchemy" } ]
+        "dependsOn": [ { "modid": "alchemy" } ],
+        "side": "server"
     }
 ]

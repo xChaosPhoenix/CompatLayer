@@ -1,0 +1,10 @@
+﻿[
+    {
+        "file": "wildcraftfruit:itemtypes/food/fruit.json",
+        "op": "Replace",
+        "path": "/attributes/handbook",
+        "value": {},
+        "dependsOn": [ { "modid": "wildcraftfruit" } ],
+        "side": "Server"
+    }
+]

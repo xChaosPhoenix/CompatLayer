@@ -81,4 +81,21 @@
         </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="assets\compatlayer\compatibility\foodshelves\" />
+      <Folder Include="assets\compatlayer\patches\foodshelves\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Releases\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Releases\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Releases\**" />
+    </ItemGroup>
+
 </Project>

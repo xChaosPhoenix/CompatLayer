@@ -4,31 +4,31 @@
         "op": "add",
         "path": "/behaviors",
         "value": [{ name: "Lockable" }],
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
     },
     {
         "file": "wildcrafttree:blocktypes/wood/woodtyped/bookshelf.json",
         "op": "add",
         "path": "/entityBehaviors",
         "value": [{ name: "ShapeMaterialFromAttributes" }],
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
     },
     {
         "file": "wildcrafttree:blocktypes/wood/woodtyped/bookshelf.json",
         "op": "add",
         "path": "/attributes/reinforcable",
         "value": true,
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
     },
     {
         "file": "wildcrafttree:blocktypes/wood/woodtyped/bookshelf.json",
         "op": "add",
         "path": "/attributes/handbook",
         "value": { groupBy: ["bookshelf*"] },
-        "side": "Server",
-        "dependsOn": [ { "modid": "wildcrafttree" } ]
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
     }
 ]

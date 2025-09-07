@@ -1,0 +1,58 @@
+[
+    {
+        "file": "compatlayer:entities/nonliving/boat-construction.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "compatlayer:entities/nonliving/boat-raft.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "compatlayer:entities/nonliving/boat-sailed.json",
+        "op": "replace",
+        "path": "/enabled",
+        "value": "true",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcrafttree:entities/water/boat-construction.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": "false",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcrafttree:entities/water/boat.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": "false",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcrafttree:itemtypes/utility/boat.json",
+        "op": "replace",
+        "path": "/shapeByType/boat-raft-*/base",
+        "value": "game:entity/nonliving/boat/raft",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcrafttree:itemtypes/utility/boat.json",
+        "op": "replace",
+        "path": "/shapeByType/boat-sailed-*/base",
+        "value": "game:entity/nonliving/boat/sailed",
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "server"
+    }
+]

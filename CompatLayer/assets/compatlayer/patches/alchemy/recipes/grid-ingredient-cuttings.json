@@ -14,7 +14,7 @@
             "height": 1,
             "output": { "type": "item", "code": "alchemy:cuttings-{herb}-raw" }
         },
-        "dependsOn": [ { "modid": "alchemy" } ],
+        "dependsOn": [ { "modid": "alchemy" }, { "modid": "wildcraftherb" }],
         "side": "server"
     }
 ]

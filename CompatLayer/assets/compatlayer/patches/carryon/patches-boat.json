@@ -4,7 +4,7 @@
         "op": "add",
         "path": "/client/behaviors/-",
         "value": { "code": "carryon:attachablecarryable" },
-        "dependsOn": [{ "modid": "carryon" }],
+        "dependsOn": [{ "modid": "carryon" }, { "modid": "wildcrafttree" }],
         "side": "server",
     },
     {
@@ -12,7 +12,7 @@
         "op": "add",
         "path": "/server/behaviors/-",
         "value": { "code": "carryon:attachablecarryable" },
-        "dependsOn": [{ "modid": "carryon" }],
+        "dependsOn": [{ "modid": "carryon" }, { "modid": "wildcrafttree" }],
         "side": "server"
     },
     {
@@ -20,7 +20,7 @@
         "op": "add",
         "path": "/client/behaviors/-",
         "value": { "code": "carryon:attachablecarryable" },
-        "dependsOn": [{ "modid": "carryon" }],
+        "dependsOn": [{ "modid": "carryon" }, { "modid": "wildcrafttree" }],
         "side": "server"
     },
     {
@@ -28,7 +28,7 @@
         "op": "add",
         "path": "/server/behaviors/-",
         "value": { "code": "carryon:attachablecarryable" },
-        "dependsOn": [{ "modid": "carryon" }],
+        "dependsOn": [{ "modid": "carryon" }, { "modid": "wildcrafttree" }],
         "side": "server",
     }
 ]

@@ -3,7 +3,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/berrybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-feijoa-flowering": [ {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,
@@ -113,7 +113,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/bottomberrybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-pilo-ripe": [ {name: "PushEventOnBlockHarvested", properties: {"eventName": "berryharvest"}}, {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,
@@ -151,7 +151,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/groundberryplant.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-honeypots-flowering": [ {name: "Harvestable", properties: {
                 "harvestTime": 0.6,
@@ -207,7 +207,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/pricklyberrybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-gooseberry-flowering": [ {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,
@@ -251,7 +251,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/pricklyshortbush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-caper-flowering": [ {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,
@@ -283,7 +283,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/shortberrybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-ugni-ripe": [ {name: "PushEventOnBlockHarvested", properties: {"eventName": "berryharvest"}}, {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,
@@ -309,7 +309,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/shrubberrybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-turkscap-flowering": [ {name: "Harvestable", properties: {
                 harvestTime: 0.6,
@@ -361,7 +361,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/topberrybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-huckleberry-ripe": [ {name: "PushEventOnBlockHarvested", properties: {"eventName": "berryharvest"}}, {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,
@@ -399,7 +399,7 @@
         "file": "wildcraftfruit:blocktypes/plant/berry/toppricklybush.json",
         "op": "replace",
         "path": "/behaviorsByType",
-        "dependsOn": [{ "modid": "wildcraftfruit", "modid": "fromgoldencombs" }],
+        "dependsOn": [{ "modid": "wildcraftfruit" }, { "modid": "fromgoldencombs" }],
         value: {
             "*-gooseberry-flowering": [ {"name": "Harvestable", "properties": {
                 "harvestTime": 0.6,

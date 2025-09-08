@@ -18,7 +18,7 @@
         },
         "condition": { "when": "CompatLayer.ConfigAlchemyPatched", "isValue": "true" },
         "side": "server",
-        "dependsOn": [ { "modid": "alchemy" } ]
+        "dependsOn": [ { "modid": "alchemy" }, { "modid": "wildcraftherb" }]
     },
     {
         "file": "alchemy:recipes/grid/ingredient/looterbase.json",
@@ -37,7 +37,7 @@
             "height": 3,
             "output": { "type": "item", "code": "alchemy:potionbase-looter-weak" }
         },
-        "dependsOn": [ { "modid": "alchemy" } ],
+        "dependsOn": [ { "modid": "alchemy" }, { "modid": "wildcraftherb" }],
         "side": "server"
     },
 ]

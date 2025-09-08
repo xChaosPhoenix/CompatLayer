@@ -1,0 +1,26 @@
+﻿[
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/antlermount.json",
+        "op": "add",
+        "path": "/behaviors",
+        "value": [{ name: "Lockable" }],
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/antlermount.json",
+        "op": "add",
+        "path": "/entityBehaviors",
+        "value": [{ name: "ShapeMaterialFromAttributes" }],
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/antlermount.json",
+        "op": "add",
+        "path": "/attributes/reinforcable",
+        "value": true,
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    }
+]

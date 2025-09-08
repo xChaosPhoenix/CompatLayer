@@ -1,0 +1,50 @@
+﻿[
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/door2.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": false,
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/door3.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": false,
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/door4.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": false,
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/door5.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": false,
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/door6.json",
+        "op": "add",
+        "path": "/enabled",
+        "value": false,
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/door1.json",
+        "op": "replace",
+        "path": "/variantgroups/0/states",
+        "value": ["sleek-windowed", "solid", "1x3gate", "2x2gate", "2x4gate", "2x3gate"],
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    }
+]

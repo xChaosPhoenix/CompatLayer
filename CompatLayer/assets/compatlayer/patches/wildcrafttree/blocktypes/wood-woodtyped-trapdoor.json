@@ -1,0 +1,10 @@
+﻿[
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/trapdoor.json",
+        "op": "replace",
+        "path": "/attributes/handbook/groupBy",
+        "value": ["door-{style}-*"],
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    }
+]

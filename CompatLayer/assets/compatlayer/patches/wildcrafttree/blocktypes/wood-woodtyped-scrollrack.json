@@ -1,0 +1,53 @@
+﻿[
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/scrollrack.json",
+        "op": "add",
+        "path": "/behaviors",
+        "value": [ { "name": "Lockable" } ],
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/scrollrack.json",
+        "op": "add",
+        "path": "/entityBehaviors",
+        "value": [ { "name": "ShapeMaterialFromAttributes" } ],
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    },
+    {
+        "file": "wildcrafttree:blocktypes/wood/woodtyped/scrollrack.json",
+        "op": "replace",
+        "path": "/attributes",
+        "value": {
+            "types": [ "normal" ],
+            "materials": { "loadFromProperties": "wildcrafttree:block/wood" },
+            "shape": { "base": "game:block/clutter/bookshelves/scrollrack-empty1" },
+            "textures": {
+                "charred": { "base": "game:block/wood/debarked/{material}", "overlays": [] },
+                "material-rim1": { "base": "game:block/wood/debarked/{material}", "overlays": [ "game:block/wood/bookshelves/rim1" ] },
+                "material-rim2": { "base": "game:block/wood/debarked/{material}", "overlays": [ "game:block/wood/bookshelves/rim2" ] }
+            },
+            "slotsHitBoxes": [
+                { "x1": 0.125, "y1": -0.125, "z1": 0, "x2": 0.375, "y2": 0.125, "z2": 1 },
+                { "x1": 0.625, "y1": -0.125, "z1": 0, "x2": 0.875, "y2": 0.125, "z2": 1 },
+                { "x1": -0.125, "y1": 0.125, "z1": 0, "x2": 0.125, "y2": 0.375, "z2": 1 },
+                { "x1": 0.375, "y1": 0.125, "z1": 0, "x2": 0.625, "y2": 0.375, "z2": 1 },
+                { "x1": 0.875, "y1": 0.125, "z1": 0, "x2": 1.125, "y2": 0.375, "z2": 1 },
+                { "x1": 0.125, "y1": 0.375, "z1": 0, "x2": 0.375, "y2": 0.625, "z2": 1 },
+                { "x1": 0.625, "y1": 0.375, "z1": 0, "x2": 0.875, "y2": 0.625, "z2": 1 },
+                { "x1": -0.125, "y1": 0.625, "z1": 0, "x2": 0.125, "y2": 0.875, "z2": 1 },
+                { "x1": 0.375, "y1": 0.625, "z1": 0, "x2": 0.625, "y2": 0.875, "z2": 1 },
+                { "x1": 0.875, "y1": 0.625, "z1": 0, "x2": 1.125, "y2": 0.875, "z2": 1 },
+                { "x1": 0.125, "y1": 0.875, "z1": 0, "x2": 0.375, "y2": 1.125, "z2": 1 },
+                { "x1": 0.625, "y1": 0.875, "z1": 0, "x2": 0.875, "y2": 1.125, "z2": 1 }
+            ],
+            "slotSide": [ "bot", "bot", "left", "mid", "right", "mid", "mid", "left", "mid", "right", "top", "top" ],
+            "oppositeSlotIndex": [ 10, 11, 4, -1, 2, -1, -1, 9, -1, 7, 0, 1 ],
+            "reinforcable": true,
+            "handbook": { "groupBy": [ "scrollrack*" ] }
+        },
+        "dependsOn": [ { "modid": "wildcrafttree" } ],
+        "side": "Server"
+    }
+]

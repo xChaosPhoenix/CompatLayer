@@ -1,0 +1,18 @@
+﻿[
+    {
+        "file": "compatlayer:recipes/grid/animalcages-cage.json",
+        "op": "replace",
+        "path": "/0/enabled",
+        "value": true,
+        "dependsOn": [ { "modid": "animalcages" } ],
+        "side": "server"
+    },
+    {
+        "file": "compatlayer:recipes/grid/animalcages-cage.json",
+        "op": "replace",
+        "path": "/1/enabled",
+        "value": true,
+        "dependsOn": [ { "modid": "animalcages" } ],
+        "side": "server"
+    }
+]

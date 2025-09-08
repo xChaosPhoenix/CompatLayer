@@ -1,0 +1,34 @@
+﻿[
+    {
+        "file": "compatlayer:entities/nonliving/boat-raft",
+        "op": "add",
+        "path": "/client/behaviors/-",
+        "value": { "code": "carryon:attachablecarryable" },
+        "dependsOn": [{ "modid": "carryon" }],
+        "side": "server",
+    },
+    {
+        "file": "compatlayer:entities/nonliving/boat-raft",
+        "op": "add",
+        "path": "/server/behaviors/-",
+        "value": { "code": "carryon:attachablecarryable" },
+        "dependsOn": [{ "modid": "carryon" }],
+        "side": "server"
+    },
+    {
+        "file": "compatlayer:entities/nonliving/boat-sailed",
+        "op": "add",
+        "path": "/client/behaviors/-",
+        "value": { "code": "carryon:attachablecarryable" },
+        "dependsOn": [{ "modid": "carryon" }],
+        "side": "server"
+    },
+    {
+        "file": "compatlayer:entities/nonliving/boat-sailed",
+        "op": "add",
+        "path": "/server/behaviors/-",
+        "value": { "code": "carryon:attachablecarryable" },
+        "dependsOn": [{ "modid": "carryon" }],
+        "side": "server",
+    }
+]

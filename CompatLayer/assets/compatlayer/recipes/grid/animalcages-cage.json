@@ -1,0 +1,50 @@
+﻿[
+    {
+        "enabled": false,
+        "ingredientPattern": "PPP,SSP,PPP",
+        "ingredients": {
+            "S": {
+                "type": "item",
+                "code": "game:stick",
+                "quantity": 4
+            },
+            "P": {
+                "type": "item",
+                "code": "wildcrafttree:plank-*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "animalcages:smallanimalcage-opened"
+        }
+    },
+    {
+        "enabled": false,
+        "ingredientPattern": "PSP,SCS,PSP",
+        "ingredients": {
+            "S": {
+                "type": "item",
+                "code": "game:stick",
+                "quantity": 1
+            },
+            "C": {
+                "type": "item",
+                "code": "game:ingot-copper",
+                "quantity": 1
+            },
+            "P": {
+                "type": "item",
+                "code": "wildcrafttree:plank-*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "animalcages:mediumanimalcage-floor-opened-north"
+        }
+    }
+
+]

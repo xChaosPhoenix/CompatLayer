@@ -1,0 +1,28 @@
+﻿[
+    {
+        "file": "game:recipes/cooking/meatystew.json",
+        "op": "add",
+        "path": "/ingredients/5/validStacks/-",
+        "value": {
+            "type": "item",
+            "code": "wildcraftherb:skunkcabbage-*",
+            "shapeElement": "bowl/vegetable 1/*",
+            "textureMapping": [ "vegetable", "group17" ]
+        },
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
+    },
+    {
+        "file": "game:recipes/cooking/meatystew.json",
+        "op": "add",
+        "path": "/ingredients/6/validStacks/-",
+        "value": {
+            "type": "item",
+            "code": "wildcraftherb:skunkcabbage-*",
+            "shapeElement": "bowl/vegetable 2/*",
+            "textureMapping": [ "vegetable", "group17" ]
+        },
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
+    }
+]

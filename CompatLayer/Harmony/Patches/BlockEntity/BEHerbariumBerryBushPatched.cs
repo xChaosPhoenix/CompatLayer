@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using CompatLayer.Harmony.Patches;
 using herbarium;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -7,7 +8,7 @@ using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 
-namespace CompatLayer.BlockEntity;
+namespace CompatLayer.Harmony.Patches;
 
 public class BEHerbariumBerryBushPatched : BEGroundBerryPlantPatched
 {

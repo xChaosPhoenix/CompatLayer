@@ -1,0 +1,42 @@
+﻿[
+    {
+        "file": "wildcraftherb:itemtypes/resources/skunkcabbage.json",
+        "op": "addmerge",
+        "path": "/transitionablePropsByType",
+        "value": {
+            "*": [
+                {
+                    "type": "Perish",
+                    "freshHours": { "avg": 36 },
+                    "transitionHours": { "avg": 24 },
+                    "transitionedStack": { "type": "item", "code": "game:rot" },
+                    "transitionRatio": 0.25
+                }
+            ]
+        },
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcraftherb:itemtypes/resources/skunkcabbage.json",
+        "op": "add",
+        "path": "/nutritionPropsWhenInMealByType",
+        "value": {
+            "*-leafs": { "satiety": 35, "health": -0.5, "foodcategory": "Vegetable" },
+            "*-stem": { "satiety": 55, "health": 0, "foodcategory": "Vegetable" }
+        },
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
+    },
+    {
+        "file": "wildcraftherb:itemtypes/resources/skunkcabbage.json",
+        "op": "add",
+        "path": "/nutritionPropsByType",
+        "value": {
+            "*-leafs": { "satiety": 15, "health": -0.5, "foodcategory": "Vegetable" },
+            "*-stem": { "satiety": 35, "health": 0, "foodcategory": "Vegetable" }
+        },
+        "dependsOn": [ { "modid": "wildcraftherb" } ],
+        "side": "server"
+    }
+]

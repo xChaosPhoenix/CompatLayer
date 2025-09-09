@@ -8,7 +8,7 @@ using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 
-namespace CompatLayer.BlockEntity;
+namespace CompatLayer.Harmony.Patches;
 
 public class BEGroundBerryPlantPatched : BEBerryPlant, IAnimalFoodSource
 {

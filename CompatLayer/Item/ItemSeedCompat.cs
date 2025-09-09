@@ -25,7 +25,6 @@ public class ItemSeedCompat : ItemPlantableSeed
             // decide if we should continue based on if it can be planted here
             if (!Attributes["isCrop"].AsBool()) return;
 
-            // so far wildcraft herbs is the only mod to implement crops growing on farmland. would have to change variant based on item code
             Block cropBlock = byEntity.World.GetBlock(AssetLocation.Create(("crop-" + itemslot.Itemstack.Collectible.Variant["herbseedlings"] + "-1"), "wildcraftherb"));
             if (cropBlock == null) return;
 
@@ -46,12 +45,18 @@ public class ItemSeedCompat : ItemPlantableSeed
         else
         {
             if (Attributes["isCrop"].AsBool()) return;
+
+            Block plantBlock = null;
+            if (Attributes["isHerb"].AsBool())
+            {
+                plantBlock = api.World.GetBlock(AssetLocation.Create("seedling-" + itemslot.Itemstack.Collectible.Variant["herbseedlings"] + "-planted", "wildcraftherb"));
+            }
+            else
+            {
+                plantBlock = api.World.GetBlock(AssetLocation.Create("groundberryseedling-" + itemslot.Itemstack.Collectible.Variant["type"] + "-planted", "wildcraftfruit"));
+            }
             
             // find correct variant based on what kind of seed it is
-            Block plantBlock = api.World.GetBlock((AssetLocation.Create(
-                (Attributes["isHerb"].AsBool() ? ("seedling-" + Variant["herbseedlings"] + "-planted") : ("groundberryseedling-" + Variant["type"] + "-planted")),
-                (Attributes["isHerb"].AsBool() ? "wildcraftherb" : "wildcraftfruit")
-                )));
             if (plantBlock == null) return;
             
             blockSel = blockSel.Clone();

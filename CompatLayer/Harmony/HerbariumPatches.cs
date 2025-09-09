@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
-using CompatLayer.BlockEntity;
 using CompatLayer.Harmony.Patches;
 using HarmonyLib;
 using herbarium;
